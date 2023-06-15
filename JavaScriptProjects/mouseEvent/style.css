@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: burlywood;
+  color: brown;
+  font-family: cursive;
+}
+
+.container {
+  border: 1px solid gray;
+  background-color: darkkhaki;
+  display: flex;
+  border-radius: 8px;
+}
+
+.mouse-event {
+  border: 2px solid black;
+  background-color: khaki;
+  margin: 40px;
+  min-width: 180px;
+  min-height: 100px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.mouse-event h4 {
+  position: absolute;
+  top: -50px;
+  font-size: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap; //it wont merge the text
+  font-weight: 100;
+  color: gray;
+}
+
+@media (max-width: 800px) {
+  .container {
+    /* when screen is smaller than 500px  */
+    flex-direction: column;
+  }
+}

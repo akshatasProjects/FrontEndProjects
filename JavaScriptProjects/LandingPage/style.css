@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  outline: none; /* line outside the border */
+
+  /* 
+   box-sizing: border-box; -- Padding and border are inside the box element
+    box-sizing: content-box; -- padding and border are outside the box element
+    */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+}
+
+header {
+  width: 70%;
+  /* border: 1px solid brown; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header ul li {
+  margin: 0 0.4rem;
+}
+
+header a {
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 18px;
+  padding: 15px 20px;
+  border-radius: 20px;
+  transition: all ease 0.8s;
+}
+
+header ul li a:hover {
+  color: #fff;
+  background-color: #25509e;
+}
+
+header ul li a.btn {
+  color: #fff;
+  background-color: #25509e;
+  padding: 15px 40px;
+}
+
+.btn:hover {
+  color: #25509e;
+  background-color: #c1d7ff;
+}
+
+/* Submenu--------------------------- */
+
+.submenu {
+  max-width: 200px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: -2px 2px 5px #333;
+  padding-left: 0;
+  margin-top: 15px;
+  opacity: 0; /* will make submenu to disappear same as display:none */
+  /* display: none; */
+  transition: all ease 0.5s;
+  z-index: 1; /* this should be with position absolute*/
+  display: block;
+}
+
+ul li:hover .submenu {
+  opacity: 1; /*will make submenu to display*/
+  /* display: inherit; */
+  margin: 20px 0; /*top bottom, Right Left*/
+}
+
+.submenu li {
+  margin: 0;
+  /* border: 1px solid blue; */
+}
+
+.submenu li a {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 0;
+}
+
+.submenu li:first-child a {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.submenu li:last-child a {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* SLIDERS STARTS */
+#home-slide {
+  height: 650px;
+  background-color: #ebebeb;
+}
+
+.slide-wrapper {
+  width: 70%;
+  height: 70vh;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: stretch; /* default value*/
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+  top: 50px;
+}
+
+.slider {
+  /* border: 1px solid blue; */
+  margin-right: 10px;
+  height: 100%; /*100% of the slide wrapper*/
+  width: 10%;
+  border-radius: 60px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all ease-in 400ms;
+  /* Making images to be in center as slider is parent */
+  /* background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+
+/* JS active class for interactivity */
+.slider.active {
+  width: 50%;
+  border-radius: 50%;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation: move-down 1.5s ease-in infinite alternate-reverse;
+}
+
+@keyframes move-down {
+  from {
+    transform: translateY(-15px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.pic-1 {
+  background: url("images/pic-1.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.pic-2 {
+  background: url("images/pic-2.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.pic-3 {
+  background: url("images/pic-3.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.pic-4 {
+  background: url("images/pic-4.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.pic-5 {
+  background: url("images/pic-5.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
