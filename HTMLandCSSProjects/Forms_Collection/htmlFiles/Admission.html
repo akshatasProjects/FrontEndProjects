@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>School Admission Form</title>
+        <style>
+            body{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 14px;
+                background-color: teal;
+                
+            }
+            h1,h2, p{
+                text-align: center;
+                color: white;
+            }
+
+            table{
+                background-color: lightgray;
+                padding: 40px;
+                border-radius: 5px;
+                margin: 0 15%;
+            }
+
+            a{
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+            }
+
+            button{
+                margin-top: 10px ;
+                width: 180px;
+                height: 40px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>Admission Form</h1>
+        <hr>
+         <!-- <button style="width: 180px;"><a href="/home.html">Back to Home Page</a></button> -->
+
+        <form method="POST" enctype="multipart/form-data">
+            <table cellspacing="1" cellpadding="2" >
+               
+                <tr>
+                    <td></td>
+                    <td>
+                        <h2>Junior School</h2>
+                        <p>Plot#, ABC Scheme, XYZ Nagar Tel:0831-1122334-342561 Fax:8876-11223344, school website:www.juniorschool.com <hr></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <strong>Student Data</strong><hr></td>
+                </tr>
+                <tr>
+                    <td>Student Name </td>
+                    <td><input type="text" name="txtName" placeholder="Student Name"></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth </td>
+                    <td><input type="date" name="txtEmail" placeholder="Enter Your Email ID"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="checkbox" name="chkGen">Male
+                        <input type="checkbox" name="chkGen">Female
+                        <input type="checkbox" name="chkGen">Other
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nationality </td>
+                    <td>
+                        <select style="width: 167px;" name="slCountry"> 
+                            <option>Select your Country</option>
+                            <option>India</option>
+                            <option>Afghanistan</option>
+                            <option> Albania </option>
+                            <option> Algeria </option>
+                            <option> Andorra </option>
+                            <option> Angola </option>
+                            <option> Antigua & Deps </option>
+                            <option>Argentina</option>
+                            <option>Armenia</option>
+                            <option>Australia</option>
+                            <option>Austria</option>
+                            <option>Azerbaijan</option>
+                            <option>Bahamas</option>
+                            <option>Bahrain</option>
+                            <option>Bangladesh</option>
+                            <option>Barbados</option>
+                            <option>Belarus</option>
+                            <option>Belgium</option>
+                            <option>Belize</option>
+                            <option>Benin</option>
+                            <option>Bhutan</option>
+                            <option>Bolivia</option>
+                            <option>Bosnia Herzegovina</option>
+                            <option>Botswana</option>
+                            <option>Brazil</option>
+                            <option>Brunei</option>
+                            <option>Bulgaria</option>
+                            <option>Burkina</option>
+                            <option>Burundi</option>
+                            <option>Cambodia</option>
+                            <option>Cameroon</option>
+                            <option>Canada</option>
+                            <option>Cape Verde</option>
+                            <option>Central African Rep</option>
+                            <option>Chad</option>
+                            <option>Chile</option>
+                            <option>China</option>
+                            <option>Colombia</option>
+                            <option>Comoros</option>
+                            <option>Congo</option>
+                            <option>Congo {Democratic Rep}</option>
+                            <option>Costa Rica</option>
+                            <option>Croatia</option>
+                            <option>Cuba</option>
+                            <option>Cyprus</option>
+                            <option>Czech Republic</option>
+                            <option>Denmark</option>
+                            <option>Djibouti</option>
+                            <option>Dominica</option>
+                            <option>Dominican Republic</option>
+                            <option>East Timor</option>
+                            <option>Ecuador</option>
+                            <option>Egypt</option>
+                            <option>El Salvador</option>
+                            <option>Equatorial Guinea</option>
+                            <option>Eritrea</option>
+                            <option>Estonia</option>
+                            <option>Ethiopia</option>
+                            <option>Fiji</option>
+                            <option>Finland</option>
+                            <option>France</option>
+                            <option>Gabon</option>
+                            <option>Gambia</option>
+                            <option>Georgia</option>
+                            <option>Germany</option>
+                            <option>Ghana</option>
+                            <option>Greece</option>
+                            <option>Grenada</option>
+                            <option>Guatemala</option>
+                            <option>Guinea</option>
+                            <option>Guinea-Bissau</option>
+                            <option>Guyana</option>
+                            <option>Haiti</option>
+                            <option>Honduras</option>
+                            <option>Hungary</option>
+                            <option>Iceland</option>
+                            <option>Indonesia</option>
+                            <option>Iran</option>
+                            <option>Iraq</option>
+                            <option>Ireland {Republic}</option>
+                            <option>Israel</option>
+                            <option>Italy</option>
+                            <option>Ivory Coast</option>
+                            <option>Jamaica</option>
+                            <option>Japan</option>
+                            <option>Jordan</option>
+                            <option>Kazakhstan</option>
+                            <option>Kenya</option>
+                            <option>Kiribati</option>
+                            <option>Korea North</option>
+                            <option>Korea South</option>
+                            <option>Kosovo</option>
+                            <option>Kuwait</option>
+                            <option>Kyrgyzstan</option>
+                            <option>Laos</option>
+                            <option>Latvia</option>
+                            <option>Lebanon</option>
+                            <option>Lesotho</option>
+                            <option>Liberia</option>
+                            <option>Libya</option>
+                            <option>Liechtenstein</option>
+                            <option>Lithuania</option>
+                            <option>Luxembourg</option>
+                            <option>Macedonia</option>
+                            <option>Madagascar</option>
+                            <option>Marshall Islands</option>
+                            <option>Malawi</option>
+                            <option>Malaysia</option>
+                            <option>Maldives</option>
+                            <option>Mali</option>
+                            <option>Malta</option>
+                            <option>Mauritania</option>
+                            <option>Mauritius</option>
+                            <option>Mexico</option>
+                            <option>Micronesia</option>
+                            <option>Moldova</option>
+                            <option>Monaco</option>
+                            <option>Mongolia</option>
+                            <option>Montenegro</option>
+                            <option>Morocco</option>
+                            <option>Mozambique</option>
+                            <option>Myanmar, {Burma}</option>
+                            <option>Namibia</option>
+                            <option>Nauru</option>
+                            <option>Nepal</option>
+                            <option>Netherlands</option>
+                            <option>New Zealand</option>
+                            <option>Nicaragua</option>
+                            <option>Niger</option>
+                            <option>Nigeria</option>
+                            <option>Norway</option>
+                            <option>Oman</option>
+                            <option>Pakistan</option>
+                            <option>Palau</option>
+                            <option>Panama</option>
+                            <option>Papua New Guinea</option>
+                            <option>Paraguay</option>
+                            <option>Peru</option>
+                            <option>Philippines</option>
+                            <option>Poland</option>
+                            <option>Portugal</option>
+                            <option>Qatar</option>
+                            <option>Romania</option>
+                            <option>Russian Federation</option>
+                            <option>Rwanda</option>
+                            <option>St Kitts & Nevis</option>
+                            <option>St Lucia</option>
+                            <option>Saint Vincent & the Grenadines</option>
+                            <option>Samoa</option>
+                            <option>San Marino</option>
+                            <option>Sao Tome & Principe</option>
+                            <option>Saudi Arabia</option>
+                            <option>Senegal</option>
+                            <option>Serbia</option>
+                            <option>Seychelles</option>
+                            <option>Sierra Leone</option>
+                            <option>Singapore</option>
+                            <option>Slovakia</option>
+                            <option>Slovenia</option>
+                            <option>Solomon Islands</option>
+                            <option>Somalia</option>
+                            <option>South Africa</option>
+                            <option>South Sudan</option>
+                            <option>Spain</option>
+                            <option>Sri Lanka</option>
+                            <option>Sudan</option>
+                            <option>Suriname</option>
+                            <option>Swaziland</option>
+                            <option>Sweden</option>
+                            <option>Switzerland</option>
+                            <option>Syria</option>
+                            <option>Taiwan</option>
+                            <option>Tajikistan</option>
+                            <option>Tanzania</option>
+                            <option>Thailand</option>
+                            <option>Togo</option>
+                            <option>Tonga</option>
+                            <option>Trinidad & Tobago</option>
+                            <option>Tunisia</option>
+                            <option>Turkey</option>
+                            <option>Turkmenistan</option>
+                            <option>Tuvalu</option>
+                            <option>Uganda</option>
+                            <option>Ukraine</option>
+                            <option>United Arab Emirates</option>
+                            <option>United Kingdom</option>
+                            <option>United States</option>
+                            <option>Uruguay</option>
+                            <option>Uzbekistan</option>
+                            <option>Vanuatu</option>
+                            <option>Vatican City</option>
+                            <option>Venezuela</option>
+                            <option>Vietnam</option>
+                            <option>Yemen</option>
+                            <option>Zambia</option>
+                            <option>Zimbabwe</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    
+                    <td><strong>Parents Data:<hr></strong></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Parents Name </td>
+                    <td><input type="text" name="txtFname" placeholder="Father Name">
+                        <input type="text" name="txtMname" placeholder="Mother Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Occupation </td>
+                    <td><input type="text" name="txtFOcc" placeholder="Father Occupation">
+                        <input type="text" name="txtMOcc" placeholder="Mother Occupation">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Office Address </td>
+                    <td><input type="text" name="txtFAdd" placeholder="Father Office Address">
+                        <input type="text" name="txtMAdd" placeholder="Mother Office Occupation">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Home Contact</td>
+                    <td><input type="text" name="txtCon1" placeholder="Contact 1">
+                        <input type="text" name="txtCon2" placeholder="Contact 2">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mobile Number</td>
+                    <td><input type="text" name="txtCon1" placeholder="Father Mobile No">
+                        <input type="text" name="txtCon2" placeholder="Mother Mobile No">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email ID</td>
+                    <td><input type="email" name="email1" placeholder="Father Email">
+                        <input type="email" name="email2" placeholder="Mother Email">
+                    </td>
+                </tr>
+
+                
+                <tr>
+                    <td>
+                        <strong>Information About Siblings Learning in our school</strong>
+                        <hr>
+                    </td>
+                    <tr>
+                        <td>Name </td>
+                        <td><input type="text" name="txtFname" placeholder="First Name">
+                            <input type="text" name="txtLname" placeholder="Last Name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Age </td>
+                        <td><input type="text" name="txtAge" placeholder="Enter Age"></td>
+                    </tr>
+                    <tr>
+                        <td>Class </td>
+                        <td><input type="text" name="txtClass" placeholder="Enter Class"></td>
+                        
+                    </tr>
+                  
+                </tr>
+                
+                <tr>
+                    <td>
+                        <strong>Emergency Contacts</strong>
+                        <hr>
+                    </td>
+                    <tr>
+                        <td>Name </td>
+                        <td><input type="text" name="txtFname" placeholder="First Name">
+                            <input type="text" name="txtLname" placeholder="Last Name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Relationship to student</td>
+                        <td><input type="text" name="txtRel" placeholder="Relationship"></td>
+                    </tr>
+                    <tr>
+                        <td>Contact Number </td>
+                        <td><input type="text" name="txtClass" placeholder="Enter Emergency contact No"></td>
+                    </tr>
+                     <tr>
+                        <td></td>
+                        <td>
+                            <button type="submit" name="btnSub"><strong>Submit</strong></button>
+                            <button type="reset" name="btnCancel"><a href="https://akshata-projects.github.io/Assignments_21/home.html">Cancel</a></button>
+                        </td>
+                    </tr>
+
+                </tr>
+                
+                
+                
+            </table>
+        </form>
+    </body>
+</html>

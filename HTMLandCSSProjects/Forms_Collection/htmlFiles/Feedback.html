@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Customer Feedback Form</title>
+        <style>
+            body{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 14px;
+                background-color: teal;
+                
+            }
+            h1{
+                text-align: center;
+                color: white;
+            }
+
+            table{
+                background-color: lightgray;
+                padding: 50px;
+                border-radius: 5px;
+                margin-left: 25%;
+            }
+
+            a{
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+            }
+
+            button{
+                margin-top: 10px ;
+                width: 380px;
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+        <h1>Customer Feedback Form</h1>
+        <!-- <button style="width: 180px;"><a href="/home.html">Back to Home Page</a></button> -->
+        <form method="POST" enctype="multipart/form-data">
+            <table>
+                <tr>
+                    <td> Thank you for using our Rent Car service! We value all our Customers and strive to meet everyone's needs.<br></td>
+                </tr>
+           
+                <tr>
+                    <td>Please tell us the date you used  our service</td>
+                </tr>
+                <tr>
+                    <td>Date: <input type="date" value="Date" name="date"></td>
+                </tr>
+
+                <tr>
+                    <td><strong>1. Were you satisfied with the customer service we provided you?</strong></td>
+                </tr>
+                             
+                <tr>
+                    <td><input type="radio" value="option1" name="option1">Yes</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" value="option2" name="option1">No</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" value="option3" name="option1">Some What</td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea name="txtCmt" Name="Comment" placeholder="Enter Your Comments" rows="5" cols="40"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><strong>2. Was our customer service provided to you in accessible manner?</strong></td>
+                </tr>
+                             
+                <tr>
+                    <td><input type="radio" value="option1" name="option1">Yes</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" value="option2" name="option1">No</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" value="option3" name="option1">Some What</td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea name="txtCmt" Name="Comment" placeholder="Enter Your Comments" rows="5" cols="40"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><strong>3. Did you experience any problems accessing our vehicle or services?</strong></td>
+                </tr>
+                             
+                <tr>
+                    <td><input type="radio" value="option1" name="option1">Yes</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" value="option2" name="option1">No</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" value="option3" name="option1">Some What</td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea name="txtCmt" Name="Comment" placeholder="Enter Your Comments" rows="5" cols="40"></textarea>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>Name </strong>
+                       <input type="text" name="txtName" placeholder="Enter Your Name"></td>
+                </tr>
+                <tr>
+                    <td><strong>Email </strong>
+                        <input type="email" name="txtEmail" placeholder="Enter Your Email ID"></td>
+                </tr>
+                <tr>
+                    <td><strong>Phone</strong>
+                    <input type="text" name="txtPno" placeholder="Enter Your Phone Number"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit" value="submit" name="btnSubmit"><strong>Submit</strong></button>
+                        <button type="reset" value="cancel" name="btnCancel"><a href="https://akshata-projects.github.io/Assignments_21/home.html">Cancel</a></button>
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+
+
+    </body>
+</html>

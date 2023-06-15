@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Magazine Subscription Form</title>
+        <style>
+            body{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 14px;
+                background-color: teal;
+                
+            }
+            h1, p{
+                text-align: center;
+                color: white;
+            }
+
+            table{
+                background-color: lightgray;
+                padding: 40px;
+                border-radius: 5px;
+                margin-left: 20%;
+                
+            }
+
+            a{
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+            }
+
+            button{
+                margin-top: 10px ;
+                width: 180px;
+                height: 40px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>Magazine Subscription Form</h1>
+        <hr>
+        <!-- <button><a href="/home.html">Back to Home Page</a></button> -->
+
+        <form method="POST" enctype="multipart/form-data">
+            <table cellspacing="1" cellpadding="2" >
+                <tr>
+                    <td>Full Name </td>
+                    <td><input type="text" name="txtName" placeholder="First Name"></td>
+                    <td><input type="text" name="txtMName" placeholder="Middle Name"></td>
+                    <td><input type="text" name="txtLName" placeholder="Last Name"></td>
+                </tr>
+                <tr>
+                    
+                    <td>Email </td>
+                    <td><input type="email" name="txtEmail" placeholder="Enter Your Email ID"></td>
+                </tr>
+                <tr>
+                    
+                    <td>Phone Number </td>
+                    <td><input type="text" name="txtNum" placeholder="Enter Your Phone Number"></td>
+                </tr>
+                <tr>
+                    
+                    <td><strong>Address:<hr></strong></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>House Number </td>
+                    <td><input type="number" name="txtHno" placeholder="Enter Your House Number"></td>
+                </tr>
+                <tr>
+                    <td>Street/Village </td>
+                    <td><input type="text" name="txtStreet" placeholder="Street/Village"></td>
+                </tr>
+                
+                <tr>
+                    <td>District/City</td>
+                    <td><input type="text" name="txtCity" placeholder="District/City"></td>
+                </tr>
+                <tr>
+                    <td>State</td>
+                    <td><input type="text" name="txtState" placeholder="Your State"></td>
+                </tr>
+                <tr>
+                    <td>PIN code</td>
+                    <td><input type="text" name="txtPin" placeholder="Your PIN code."></td>
+                </tr>
+
+                <tr>
+                    <td><strong>Subscription:<hr></strong></td><br><br>
+                    <td>
+                        <input type="checkbox" name="chkMonthly">Monthly Subscription $9.99<br>
+                        <input type="checkbox" name="chkMonthly">6-Months Subscription $50.99<br>
+                        <input type="checkbox" name="chkMonthly">Annual Subscription $80.99<br>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Credit card:</strong>
+                        <hr>
+                    </td>
+                    <tr>
+                        <td>Name on card </td>
+                        <td><input type="text" name="txtName" placeholder="First Name"></td>
+                        <td><input type="text" name="txtMName" placeholder="Middle Name"></td>
+                        <td><input type="text" name="txtLName" placeholder="Last Name"></td>
+                    </tr>
+                    <tr>
+                        
+                        <td>Credit Card Number </td>
+                        <td><input type="Text" name="txtcard" placeholder="Enter Your Card Number"></td>
+                        <td><input type="text" name="txtSec" placeholder="Security Code"></td>
+                    </tr>
+                    <tr>
+                        <td>Expiration date</td>
+                        <td><input type="month"  name="Mthstart" min="2015-03" value="2020-05">
+                    </tr>
+                    <tr>
+                        <td>Postal Code</td>
+                        <td><input type="text" name="txtCode" ></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button type="submit" name="btnSub"><strong>Submit</strong></button>
+                            <button type="reset" name="btnCancel"><a href="https://akshata-projects.github.io/Assignments_21/home.html">Cancel</a></button>
+                        </td>
+                    </tr>
+
+                </tr>
+                
+                
+                
+            </table>
+        </form>
+    </body>
+</html>

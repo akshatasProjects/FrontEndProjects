@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Traveling Self Declaration Form</title>
+      <style>  
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 14px;
+            background-color: teal;
+           
+            
+        }
+        h1{
+            /* text-align: center; */
+            color: white;
+        }
+
+        table {
+            background-color: lightgray;
+            padding: 150px;
+            border-radius: 5px;
+            margin: 50px;
+
+        }
+
+        p{
+            text-align: center;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        button{
+            margin-top: 10px ;
+            width: 380px;
+        }
+    </style>
+
+        
+    </head>
+    <body>
+        
+        <!-- <button style="width: 180px;"><a href="/home.html">Back to Home Page</a></button> -->
+        <form method="POST" enctype="multipart/form-data">
+            <h1>Self Declaration Form</h1>
+            <table cellspacing="1" cellpadding="5">
+                
+                <tr>
+                    
+                    <td>
+                        <img src="Images/India.PNG">
+                        <p>SELF DECLARATION FORM TO BE FILLED BY ALL INTERNATIONAL PASSENGERS
+                            (TO BE PRESENTED AT THE HEALTH & IMMIGRATION COUNTER)
+                           All persons coming to India are required to fill up the Proforma in duplicate & submitting a copy each to Heath and
+                           Immigration Counter</p>
+                           <td>
+                            
+                           </td>
+                    </td>
+                    
+                   
+                </tr>
+                <tr>
+                    
+                    <td><strong>Personal Information<hr></strong></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    
+                    <td>Name of the Passenger </td>
+                    <td><input type="text" name="txtName" placeholder="Enter Your Name"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Seat No. </td>
+                    <td><input type="text" name="txtSeat" placeholder="Seat Number"></td>
+                </tr>
+                <tr>
+                    <td>Flight No. </td>
+                    <td><input type="text" name="txtFlight" placeholder="Flight Number"></td>
+                </tr>
+                <tr>
+                    <td>Passport No.</td>
+                    <td><input type="text" name="txtPno" placeholder="Passport Number"></td>
+                </tr>
+                <tr>
+                    <td>Nationality</td>
+                    <td><input type="text" name="txtNationality" placeholder="Your Nationality"></td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td><input type="number" name="txtAge" placeholder="Your Age"></td>
+                </tr>
+                <tr>
+                    <td>Date of Arrival</td>
+                    <td><input type="date" name="txtNationality"></td>
+                </tr>
+                <tr>
+                    <td>Port of Origin of journey</td>
+                    <td><input type="text" name="txtPort" placeholder="Port of Origin of journey"></td>
+                </tr>
+                <tr>
+                    <td>Origin of Destination</td>
+                    <td><input type="text" name="txtDestin" placeholder="Port of Origin of journey"></td>
+                </tr>
+                             
+                <tr>
+                    
+                    <td><strong>Contact Address in India for All Travellers:<hr></strong></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>House Number </td>
+                    <td><input type="number" name="txtHno" placeholder="Enter Your House Number"></td>
+                </tr>
+                <tr>
+                    <td>Street/Village </td>
+                    <td><input type="text" name="txtStreet" placeholder="Street/Village"></td>
+                </tr>
+                <tr>
+                    <td>Tehsil </td>
+                    <td><input type="text" name="txtTehsil" placeholder="Tehsil"></td>
+                </tr>
+                <tr>
+                    <td>District/City</td>
+                    <td><input type="text" name="txtCity" placeholder="District/City"></td>
+                </tr>
+                <tr>
+                    <td>State</td>
+                    <td><input type="text" name="txtState" placeholder="Your State"></td>
+                </tr>
+                <tr>
+                    <td>PIN code</td>
+                    <td><input type="text" name="txtPin" placeholder="Your PIN code."></td>
+                </tr>
+                <tr>
+                    <td>Residence Number</td>
+                    <td><input type="text" name="txtResidence" placeholder="Residence Number"></td>
+                </tr>
+                <tr>
+                    <td>Mobile Number</td>
+                    <td><input type="text" name="txtMobile" placeholder="Enter Your Mobile No" required></td>
+                </tr>
+                <tr>
+                    <td>Email-ID</td>
+                    <td><input type="email" name="txtemail" placeholder="Your Email-ID"></td>
+                </tr>
+                
+                <tr>
+                   <td><strong><hr>(Part-A)</strong><hr></td>
+                 </tr>
+                <tr>
+                    <td><strong>a.</strong> Details of the cities/ countries visited in last 28 days</td>
+                    <td><input type="text" name="txtVisit" placeholder="Countries visited in last 28 days"></td>
+                </tr>
+                <tr>
+                    <td><strong>b.</strong> Do you presently have any of the following symptoms: </td>
+                    <td>
+                        <input type="checkbox" value="Fever">Fever<br>
+                        <input type="checkbox" value="Cough">Cough<br>
+                        <input type="checkbox" value="Respiratory Distress">Respiratory Distress<br>
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Are you suffering from (Please indicate)-(Hypertension, Diabetes, Bronchial Asthma, Cancer, Under
+                                    Immunosuppressive therapy, Post- Transplant patients or any other illness). 
+                             </li>
+                             
+                        </ul>
+                        <hr>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <ul>
+                            <li>
+                                I am not suppressing any relevant/ material facts and all the above stated information is correct to the
+                                best of my knowledge. Non-disclosure/ suppression of information may attract penal provisions. 
+                            </li>
+                            <li>
+                                I undertake this journey at my own risk of contracting any disease including COVID 19 and Air India will
+                                not be liable for any costs incurred or damages suffered upon, either direct or indirect, as a result of or
+                                incidental to such illness and I release Air India from any liability of any kind arising there from. I shall
+                                follow Quarantine and/or any other instructions as prescribed by health authorities, at prescribed
+                                location, at my own cost on arrival at destination (14 days as prescribed currently).
+                                
+                            </li>
+                        </ul>
+                        
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td></td>
+                    <td> <strong>Signature of the passenger</strong> </td>
+                    
+                </tr>
+               
+
+                <tr>
+                    <td>
+                        <em>In case you develop symptoms such as fever and cough within 28 days of leaving this airport, restrict your
+                            outdoor movement and contact MoHFW’S 24 hours helpline number 011-23978046. Call operator will tell
+                            you whom to contact further, in the meanwhile keep yourself isolated in your house/room. 
+                            </em>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <button type="submit" value="submit" name="btnSub"><strong>Submit</strong></button>
+                        <button type="reset" value="reset" name="btnCancel"><a href="https://akshata-projects.github.io/Assignments_21/home.html">Cancel</a></button>
+                        
+                    </td>
+                </tr>
+
+
+            </table>
+                       
+        </form>
+        
+    </body>
+</html>
