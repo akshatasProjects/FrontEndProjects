@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sum of the two given integers</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to compute the sum of the two given integers.
+      If the two values are the same, then return triple their sum.
+    </p>
+    <script>
+      function sumTriple(x, y) {
+        if (x === y) {
+          return 3 * (x + y);
+        } else {
+          return x + y;
+        }
+      }
+
+      document.write(sumTriple(10, 20) + "<br/>");
+      document.write(sumTriple(20, 20));
+    </script>
+  </body>
+</html>

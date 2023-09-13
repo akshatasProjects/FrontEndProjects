@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rotate String</title>
+  </head>
+  <body onload="animate_string('target')">
+    <br />
+    <p>
+      Write a JavaScript program to rotate the string 'w3resource' in the right
+      direction. This is done by periodically removing one letter from the
+      string end and attaching it to the front.
+    </p>
+    <br />
+    <pre id="target">Rotate the string </pre>
+
+    <script>
+      function animate_string(id) {
+        let element = document.getElementById(id);
+        let textNode = element.childNodes[0];
+        let text = textNode.data;
+
+        setInterval(function () {
+          text = text[text.length - 1] + text.substring(0, text.length - 1);
+          textNode.data = text;
+        }, 1000);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>multiplication and division</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to calculate multiplication and division of two
+      numbers (input from the user).
+    </p>
+
+    <form>
+      1st Number : <input type="text" id="firstNumber" /><br />
+      2nd Number: <input type="text" id="secondNumber" /><br />
+      <input type="button" onClick="multiplyBy()" value="Multiply" />
+      <input type="button" onClick="divideBy()" value="Divide" />
+    </form>
+    <p>
+      The Result is : <br />
+      <span id="result"></span>
+    </p>
+
+    <script>
+      function multiplyBy() {
+        const num1 = document.getElementById("firstNumber").value;
+        const num2 = document.getElementById("secondNumber").value;
+        document.getElementById("result").innerHTML = num1 * num2;
+      }
+
+      function divideBy() {
+        const num1 = document.getElementById("firstNumber").value;
+        const num2 = document.getElementById("secondNumber").value;
+        document.getElementById("result").innerHTML = num1 / num2;
+      }
+    </script>
+  </body>
+</html>

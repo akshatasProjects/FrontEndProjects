@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Difference between a given number and 13,</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to get the difference between a given number
+      and 13, if the number is broader than 13 return double the absolute
+      difference.
+    </p>
+
+    <script>
+      function difference(n) {
+        if (n <= 13) {
+          return 13 - n;
+        } else {
+          return (n - 13) * 2;
+        }
+      }
+      document.write(difference(13) + "<br/>");
+      document.write(difference(11));
+    </script>
+  </body>
+</html>

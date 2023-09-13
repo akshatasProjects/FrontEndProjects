@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leap Year</title>
+  </head>
+  <body>
+    <!-- is divisible by 4 == no? NOT LEAP -- Yes  
+         is divisible by 100 == no? Leap Year -- Yes  
+         is divisible by 400 == no? Not Leap -- yes -- leap year
+    -->
+    <p>
+      Write a JavaScript program to determine whether a given year is a leap
+      year in the Gregorian calendar.
+    </p>
+
+    <script>
+      function leapYear(year) {
+        return year % 100 === 0 ? year % 400 === 0 : year % 4 === 0;
+      }
+      document.write(leapYear(2000));
+    </script>
+  </body>
+</html>

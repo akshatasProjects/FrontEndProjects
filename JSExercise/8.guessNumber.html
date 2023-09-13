@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess a number</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program where the program takes a random integer
+      between 1 and 10, and the user is then prompted to input a guess number.
+      The program displays a message "Good Work" if the input matches the guess
+      number otherwise "Not matched".
+    </p>
+    <script>
+      // Get a random integer from 1 to 10 inclusive
+      const num = Math.ceil(Math.random() * 10);
+      document.write(num + "<br />");
+      // user Number
+      const userNum = Number(prompt("Enter a number"));
+      if (userNum == num) document.write("Matched");
+      else document.write("Not matched, Guessed number was " + userNum);
+    </script>
+  </body>
+</html>

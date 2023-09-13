@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Days left until next Christmas</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to calculate the days left before Christmas.
+    </p>
+
+    <script>
+      let today = new Date();
+      let cmas = new Date(today.getFullYear(), 11, 25);
+
+      if (today.getMonth === 11 && today.getDate > 25) {
+        cmas.setFullYear(cmas.getFullYear() + 1);
+      }
+
+      let hour_one_day = 1000 * 60 * 60 * 24;
+      let daysLeft = Math.ceil(
+        (cmas.getTime() - today.getTime()) / hour_one_day
+      );
+
+      document.write(`Current day is ::<br/> ${today} <br/><br/>`);
+      document.write(
+        `This year christmas will be :: <br/ >${cmas} <br/><br/ >`
+      );
+      document.write(`Total Hours ${hour_one_day}<br/><br/>`);
+      document.write(`Days left until Christmas! :: <br/ >${daysLeft} <br/>`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convert temperatures</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to convert temperatures to and from celsius,
+      fahrenheit.
+    </p>
+    <!-- Fahrenheit to Celsius : (°F − 32) ÷ 1.8 = °C
+    Celsius to Fahrenheit : (°C × 1.8) + 32 = °F -->
+
+    <script>
+      function cToF(celsius) {
+        var cTemp = celsius;
+        var cToFahr = (cTemp * 9) / 5 + 32;
+        var message = cTemp + "\xB0C is " + cToFahr + " \xB0F.";
+        document.write(message + "<br/>");
+      }
+
+      function fToC(fahrenheit) {
+        var fTemp = fahrenheit;
+        var fToCel = ((fTemp - 32) * 5) / 9;
+        var message = fTemp + "\xB0F is " + fToCel + "\xB0C.";
+        document.write(message + "<br/>");
+      }
+      cToF(60);
+      fToC(45);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1st January be a Sunday</title>
+  </head>
+  <body>
+    <!-- To find out which years between 2014 and 2050 have 
+        1st January falling on a Sunday, we can use the following approach:
+        Loop through each year between 2014 and 2050 and 
+        check if the -- 1st January of that year falls on a Sunday--.
+        
+        To check if the 1st January of a year is a Sunday, 
+        we can use the Date object in JavaScript. 
+        Create a Date object for the 1st January of each year and 
+        use the getDay() method to get the day of the week. 
+        The getDay() method returns an integer between 0 and 6, 
+        where 0 represents Sunday, 1 represents Monday, and so on.
+        If the day of the week is 0 (Sunday), we can print out the year.-->
+
+    <p>
+      Write a JavaScript program to find out if 1st January will be a Sunday
+      between 2014 and 2050.
+    </p>
+    <script>
+      document.write(`-------------------<br/>`);
+      for (let year = 2014; year <= 2050; year++) {
+        // Date(year, month, day)
+        let day = new Date(year, 0, 1);
+        if (day.getDay() === 0) {
+          document.write(`1st January is being Sunday ${year} <br/>`);
+        }
+      }
+      document.write("-------------------");
+    </script>
+  </body>
+</html>
