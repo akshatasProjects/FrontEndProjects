@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Integer is within 20 of 100 or 400</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to check whether a given integer is within 20
+      of 100 or 400.
+    </p>
+    <script>
+      function test100(x) {
+        return Math.abs(100 - x) <= 20 || Math.abs(400 - x) <= 20;
+      }
+
+      document.write(test100(30) + "<br/>");
+      document.write(test100(90));
+    </script>
+  </body>
+</html>

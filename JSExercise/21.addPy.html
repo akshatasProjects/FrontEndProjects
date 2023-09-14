@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>"Py" in front of a given string</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to create another string by adding "Py" in
+      front of a given string. If the given string begins with "Py" return the
+      original string.
+    </p>
+    <script>
+      function addPy(str) {
+        if (
+          str === null ||
+          str === undefined ||
+          str.substring(0, 2) === "Py" ||
+          str.substring(0, 2) === "py"
+        ) {
+          return str;
+        } else {
+          return "Py" + str;
+        }
+      }
+
+      document.write(addPy("Javascript") + "<br>");
+      document.write(addPy("Python" + "<br>"));
+      document.write(addPy("python"));
+    </script>
+  </body>
+</html>

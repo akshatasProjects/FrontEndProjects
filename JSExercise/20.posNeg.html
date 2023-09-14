@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positive and Negative Numbers</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to check two given integers whether one is
+      positive and another one is negative.
+    </p>
+
+    <script>
+      function posNeg(x, y) {
+        if ((x < 0 && y > 0) || (x > 0 && y < 0)) {
+          return "Negative number";
+        } else {
+          return "Positive Number";
+        }
+      }
+
+      document.write(posNeg(-2, 3) + "<br/>");
+      document.write(posNeg(2, 3) + "<br/>");
+    </script>
+  </body>
+</html>

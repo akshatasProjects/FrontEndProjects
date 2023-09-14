@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add char first last</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to create another string from a given string
+      with the first character of the given string added to the front and back.
+    </p>
+    <script>
+      function firstLast(str) {
+        let first = str.substring(0, 1);
+        return first + str + first;
+      }
+
+      document.write(firstLast("swift") + "<br/>");
+      document.write(firstLast("ABC") + "<br/>");
+    </script>
+  </body>
+</html>
