@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add JAva String</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to check whether a string starts with 'Java' if
+      it does not otherwise.
+    </p>
+
+    <script>
+      function startJava(str) {
+        if (str < 4) {
+          return false;
+        }
+
+        let startString = str.substring(0, 4);
+        if (startString === "Java") {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      document.write(startJava("Javascript"));
+    </script>
+  </body>
+</html>
