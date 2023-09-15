@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Script Position in String</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to check whether a string "Script" appears at
+      the 5th (index 4) position in a given string. If "Script" appears in the
+      string, return the string without "Script" otherwise return the original
+      one
+    </p>
+
+    <script>
+      function stringPosition(str) {
+        if (str.length < 6) {
+          return str;
+        }
+
+        let resultStr = str;
+        if (str.substring(10, 4) == "Script") {
+          return (resultStr = str.substring(0, 4) + str.substring(10, 4));
+        }
+      }
+
+      document.write(stringPosition("JavaScript"));
+    </script>
+  </body>
+</html>

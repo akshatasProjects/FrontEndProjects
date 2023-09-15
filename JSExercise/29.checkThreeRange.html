@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Three integers values are in the range 50..99 (inclusive).</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to check whether three given integer values are
+      in the range 50..99 (inclusive). Return true if one or more of them are in
+      the specified range.
+    </p>
+
+    <script>
+      function rangeThree(x, y, z) {
+        if (
+          (x >= 50 && x <= 99) ||
+          (y >= 50 && y <= 99) ||
+          (z >= 50 && z <= 99)
+        ) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      document.write(rangeThree(50, 90, 99));
+    </script>
+  </body>
+</html>

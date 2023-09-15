@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Largest Of 3</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to find the largest of three given integers.
+    </p>
+
+    <script>
+      function largestofThree(x, y, z) {
+        if (x > y) {
+          return x;
+        } else if (y > z) {
+          return y;
+        } else if (z > x) {
+          return z;
+        }
+      }
+
+      document.write(largestofThree(10, 20, 120));
+    </script>
+  </body>
+</html>
