@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Numbers are in the range 40..60 or 70..100 inclusive</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to check whether two numbers are in the range
+      40..60 or 70..100 inclusive.
+    </p>
+    <script>
+      function numbers_ranges(x, y) {
+        if (
+          (x >= 40 && x <= 60 && y >= 40 && y <= 60) ||
+          (x >= 70 && x <= 100 && y >= 70 && y <= 100)
+        ) {
+          return true;
+        }
+        return false;
+      }
+
+      document.write(numbers_ranges(44, 56));
+    </script>
+  </body>
+</html>

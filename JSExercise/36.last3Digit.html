@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check whether the last digit of the three are same</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program that checks whether the last digit of three
+      positive integers is the same.
+    </p>
+    <script>
+      function lastDigit(x, y, z) {
+        if (x > 0 && y > 0 && z > 0) {
+          return x % 10 == y % 10 && y % 10 == z % 10 && x % 10 == z % 10;
+        } else {
+          return false;
+        }
+      }
+      document.write(lastDigit(20, 30, -400));
+    </script>
+  </body>
+</html>

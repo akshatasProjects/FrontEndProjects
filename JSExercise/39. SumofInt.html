@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sum of the two given integers</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to compute the sum of the two given integers.
+      <br />* If the sum is in the range 50..80 return 65 otherwise return 80.
+    </p>
+    <script>
+      function sumInt(x, y) {
+        const sum = x + y;
+        if (sum >= 50 && sum <= 80) {
+          return 65;
+        }
+        return 80;
+      }
+
+      document.write(sumInt(20, 60));
+    </script>
+  </body>
+</html>

@@ -12,16 +12,19 @@
 
     <script>
       function largestofThree(x, y, z) {
+        let maxValue = 0;
         if (x > y) {
-          return x;
-        } else if (y > z) {
-          return y;
-        } else if (z > x) {
-          return z;
+          maxValue = x;
+        } else {
+          maxValue = y;
         }
+        if (z > maxValue) {
+          maxValue = z;
+        }
+        return maxValue;
       }
 
-      document.write(largestofThree(10, 20, 120));
+      document.write(largestofThree(100, 20, 120));
     </script>
   </body>
 </html>

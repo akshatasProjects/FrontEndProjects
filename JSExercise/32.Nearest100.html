@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nearest to 100</title>
+  </head>
+  <body>
+    <p>
+      Find a value which is nearest to 100 from two different given integer
+      values
+    </p>
+
+    <script>
+      function nearest100(x, y) {
+        if (x != y) {
+          let x1 = Math.abs(x - 100);
+          let y1 = Math.abs(y - 100);
+          if (x1 < y1) {
+            return x;
+          }
+          if (y1 < x1) {
+            return y;
+          }
+          return 0;
+        } else {
+          return false;
+        }
+      }
+
+      document.write(nearest100(90, 89) + "<br/>");
+      document.write(nearest100(90, 90) + "<br/>");
+      document.write(nearest100(89, 85) + "<br/>");
+    </script>
+  </body>
+</html>
