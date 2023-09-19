@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greater than 20 and less than others</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to check from three given integers whether a
+      number is greater than or equal to 20. It is less than the others.
+    </p>
+
+    <script>
+      function greater20(a, b, c) {
+        return (
+          (a >= 20 && (a < b || a < c)) ||
+          (b >= 20 && (b < a || b < c)) ||
+          (c >= 20 && (c < a || c < b))
+        );
+      }
+
+      document.write(greater20(23, 45, 10));
+    </script>
+  </body>
+</html>

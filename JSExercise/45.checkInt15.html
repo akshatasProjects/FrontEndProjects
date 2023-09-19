@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check int Value 15</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program that checks two integer values and returns true
+      if either one is 15 or if their sum or difference is 15.
+    </p>
+
+    <script>
+      function checkInt15(p, q) {
+        return p === 15 || q === 15 || p + q === 15 || Math.abs(p - q) === 15;
+      }
+
+      document.write(checkInt15(5, 5));
+    </script>
+  </body>
+</html>
