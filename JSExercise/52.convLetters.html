@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String in alphabetical order</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to convert letters of a given string
+      alphabetically.
+    </p>
+    <script>
+      function alphaStr(str) {
+        return str.split("").sort().join("");
+      }
+      document.write(alphaStr("Python"));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number presents in the range 40..10000</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to check whether a given number exists in the
+      range 40..10000. <br />For example 40 presents in 40 and 4000.
+    </p>
+
+    <script>
+      function numRange(x, y, n) {
+        if (n <= 40 || n >= 10000) {
+          return false;
+        } else if (n >= x && n <= y) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      document.write(numRange(40, 4000, 45));
+    </script>
+  </body>
+</html>

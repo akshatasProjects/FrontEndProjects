@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number is multiple of 7 or 11</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to check two given non-negative integers if one
+      (not both) is a multiple of 7 or 11.
+    </p>
+
+    <script>
+      function multipleOf7(a, b) {
+        if (!(a % 7 === 0 || a % 11 === 0) && (b % 7 === 0 || b % 11 === 0)) {
+          return a % 7 == 0 || a % 11 == 0 || b % 7 == 0 || b % 11 == 0;
+        } else {
+          return false;
+        }
+      }
+
+      document.write(multipleOf7(14, 20));
+    </script>
+  </body>
+</html>

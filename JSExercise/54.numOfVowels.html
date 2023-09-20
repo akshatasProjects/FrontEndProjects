@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Count the number of vowels in a given string</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to count the number of vowels in a given string
+    </p>
+    <script>
+      function vowel_Count(str) {
+        return str.replace(/[^aeiou]/g, "").length;
+      }
+      document.write(vowel_Count("Python"));
+    </script>
+  </body>
+</html>

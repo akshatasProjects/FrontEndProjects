@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capitalize the first letter</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to capitalize the first letter of each word in
+      a given string.
+    </p>
+    <script>
+      function firstCaps(str) {
+        str = str.split(" ");
+        for (let i = 0; i < str.length; i++) {
+          str[i] = str[i][0].toUpperCase() + str[i].substr(1);
+        }
+        return str.join(" ");
+      }
+
+      document.write(firstCaps("need to work"));
+    </script>
+  </body>
+</html>
