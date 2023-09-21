@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Concarenate 2 strings without first letter</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to concatenate two strings except for their
+      first character.
+    </p>
+    <script>
+      function concatenateStr(str1, str2) {
+        str1 = str1.substring(1, str1.length);
+        str2 = str2.substring(1, str2.length);
+        return str1 + str2;
+      }
+
+      document.write(concatenateStr("Python", "PHP"));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>middle three characters</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to create a string using the middle three
+      characters of a given string of odd length. The string length must be
+      greater than or equal to three.
+    </p>
+
+    <script>
+      function midChar(str) {
+        let strLen = str.length;
+        if (strLen >= 3) {
+          if (strLen % 2 !== 0) {
+            let mid = (strLen + 1) / 2;
+            // document.write(mid);
+            return str.slice(mid - 2, mid + 1);
+          }
+        }
+      }
+
+      document.write(midChar("Akshata"));
+    </script>
+  </body>
+</html>

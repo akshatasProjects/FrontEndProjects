@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Move last 3 character to first</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to move the last three characters to the start
+      of a given string. The string length must be greater than or equal to
+      three.
+    </p>
+    <script>
+      function Last2first(str) {
+        if (str.length > 3) {
+          document.write(str.slice(-3) + "<br/>");
+          document.write(str.slice(0, str.length - 3) + "<br/>");
+
+          return str.slice(-3) + str.slice(0, 3);
+        }
+      }
+      document.write(Last2first("Python"));
+    </script>
+  </body>
+</html>
