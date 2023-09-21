@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check equal number of P and T</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to check whether a given string contains an
+      equal number of p's and t's.
+    </p>
+    <script>
+      function countPT(str) {
+        let strP = str.replace(/[^p]/g, "");
+        let strT = str.replace(/[^t]/g, "");
+
+        document.write("Total P letters are :" + strP + "<br/>");
+        document.write("Total t letters are :" + strT + "<br/>");
+
+        let lenP = strP.length;
+        document.write(lenP + "<br/>");
+        let lenT = strT.length;
+        document.write(lenT + "<br/>");
+
+        return lenP === lenT;
+      }
+
+      document.write(countPT("paatpss"));
+    </script>
+  </body>
+</html>

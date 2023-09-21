@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4 copies of the last 3 characters of a given original string</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to create an updated string of 4 copies of the
+      last 3 characters of a given original string. The string length must be 3
+      and above.
+    </p>
+
+    <script>
+      function lastString(str) {
+        let strLen = str.length;
+        if (strLen >= 3) {
+          let strChar = str.substring(strLen - 3);
+          return strChar.repeat(4);
+        }
+      }
+
+      document.write(lastString("Pyth"));
+    </script>
+  </body>
+</html>
