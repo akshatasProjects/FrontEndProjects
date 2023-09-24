@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display the city name</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to display the city name if the string begins
+      with "Los" or "New" otherwise return blank.
+    </p>
+
+    <script>
+      function cityName(str) {
+        if (
+          str.length >= 3 &&
+          (str.substring(0, 3) == "New" || str.substring(0, 3) == "Los")
+        ) {
+          return str;
+        } else {
+          return "*";
+        }
+      }
+
+      document.write(cityName("Newyork" + "<br/>"));
+      document.write(cityName("India"));
+    </script>
+  </body>
+</html>

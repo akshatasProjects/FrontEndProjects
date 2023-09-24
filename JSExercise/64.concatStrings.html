@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Concatenate two strings</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to concatenate two strings and return the
+      result.
+      <br />* If the length of the strings does not match, then remove the
+      characters from the longer string. <br />** For example "Python" and "JS"
+      will be "onJS".
+    </p>
+
+    <script>
+      function concatString(str1, str2) {
+        document.write(`Let minimum value is <br/> `);
+
+        document.write(`The string1 length is ${str1.length} <br/> `);
+        document.write(`The string2 length is ${str2.length} <br/> `);
+
+        let min = Math.min(str1.length, str2.length);
+        document.write(`So min value in ${min} <br/>`);
+
+        document.write(
+          `The substring value of ${str1} starts at ${
+            str1.length - min
+          }: ${str1.substring(str1.length - min)}<br/>`
+        );
+        document.write(
+          `The substring value of ${str2} starts at ${
+            str2.length - min
+          }: ${str2.substring(str2.length - min)}<br/>`
+        );
+
+        let concat =
+          str1.substring(str1.length - min) + str2.substring(str2.length - min);
+        return concat;
+      }
+
+      document.write(concatString("Python", "JS"));
+    </script>
+  </body>
+</html>

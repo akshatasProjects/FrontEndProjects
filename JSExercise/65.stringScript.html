@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String end with "Script"</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to test whether a string ends with "Script".
+      The string length must be greater than or equal to 6.
+    </p>
+    <script>
+      function textScript(str) {
+        document.write(
+          `<br/>The word "script" will starts at 4 position <br/>`
+        );
+        document.write(`${str.substring(str.length - 6, str.length)}<br/>`);
+        if (str.substring(str.length - 6, str.length) == "script") {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      document.write(textScript("Python"));
+      document.write(textScript("Tyescript"));
+    </script>
+  </body>
+</html>
