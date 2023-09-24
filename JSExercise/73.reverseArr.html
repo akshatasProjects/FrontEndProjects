@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reverse the elements of a given array of integers length 3</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to reverse the elements of a given array of
+      integers of length 3
+    </p>
+    <script>
+      function reverseArr(array) {
+        // return arr.reverse();
+
+        return array.map((element, idx, arr) => arr[arr.length - 1 - idx]);
+      }
+      document.write(reverseArr([5, 4, 3]));
+    </script>
+  </body>
+</html>

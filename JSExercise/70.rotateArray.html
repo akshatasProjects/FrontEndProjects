@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rotate Elements of Array</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to rotate the elements left in a given array of
+      integers of length 3.
+    </p>
+    <script>
+      function rotateArr(arr) {
+        document.write(`The original array is: ${arr} <br/>`);
+        return [arr[1], arr[2], arr[0]];
+      }
+      document.write(rotateArr([10, 30, 40]));
+    </script>
+  </body>
+</html>

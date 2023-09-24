@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Check whether 1 appears in first or last position of a given array of
+      integers
+    </title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to check whether 1 appears in the first or last
+      position of a given array of integers. <br />* The array length must be
+      larger than or equal to 1.
+    </p>
+    <script>
+      function oneFirstLast(numArr) {
+        let lastPos = numArr.length - 1;
+        return numArr[0] == 1 || numArr[lastPos] == 1;
+      }
+      document.write(oneFirstLast([10, 30, 1]));
+    </script>
+  </body>
+</html>

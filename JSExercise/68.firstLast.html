@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First and last n characters</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to create a new string using the first and last
+      n characters from a given string. <br />* The string length must be larger
+      than or equal to n.
+    </p>
+    <script>
+      function firstLastChar(str, n) {
+        let firstPart = str.substring(0, n);
+        let lastPart = str.substring(str.length - n);
+        document.write(`first Part is: ${firstPart} <br/>`);
+        document.write(`last Part is: ${lastPart} <br/>`);
+        return firstPart + lastPart;
+      }
+
+      document.write(firstLastChar("JavaScript", 2));
+    </script>
+  </body>
+</html>

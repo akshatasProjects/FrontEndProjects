@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Find the larger value between the first or last and set all the other
+      elements with that value
+    </title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to find the largest value between the first and
+      last elements and set all the other elements to that value. Display the
+      updated array.
+    </p>
+    <script>
+      function numMax(nums) {
+        let last = nums.length - 1;
+        let maxValue = nums[0] > nums[last] ? nums[0] : nums[last];
+        nums[0] = maxValue;
+        nums[1] = maxValue;
+        nums[2] = maxValue;
+
+        return nums;
+      }
+
+      document.write(numMax([20, 30, 50]));
+    </script>
+  </body>
+</html>

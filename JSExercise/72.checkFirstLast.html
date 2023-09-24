@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check first last equal</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to check whether the first and last elements
+      are the same in a given array of integers of length 3
+    </p>
+    <script>
+      function firstLastEle(numArr) {
+        let lastPos = numArr.length - 1;
+        if (numArr.length >= 1) {
+          return numArr[0] == numArr[lastPos];
+        } else {
+          return false;
+        }
+      }
+
+      document.write(firstLastEle([10, 20, 10]));
+    </script>
+  </body>
+</html>
