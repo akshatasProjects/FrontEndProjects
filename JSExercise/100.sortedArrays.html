@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check whether there is at least one element</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to check if there is at least one element in
+      two given sorted arrays of integers.
+    </p>
+    <script>
+      function check_common_element(arra1, arra2) {
+        for (var i = 0; i < arra1.length; i++) {
+          if (arra2.indexOf(arra1[i]) != -1) return true;
+        }
+        return false;
+      }
+
+      document.write(check_common_element([1, 2, 3], [3, 4, 5]));
+    </script>
+  </body>
+</html>

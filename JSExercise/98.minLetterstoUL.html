@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Minimum number of letters to make a given string written in upper case or
+      lower case.
+    </title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to change the case of the minimum number of
+      letters to make a given string written in upper case or lower case.
+      <br />Fox example "Write" will be write and "PHp" will be "PHP"
+    </p>
+    <script>
+      function lowerUpper(str) {
+        let x = 0;
+        let y = 0;
+        for (let i = 0; i < str.length; i++) {
+          if (/[A-Z]/.test(str[i])) {
+            x++;
+          } else {
+            y++;
+          }
+        }
+        if (y > x) {
+          return str.toLowerCase();
+        } else {
+          return str.toUpperCase();
+        }
+      }
+
+      document.write(lowerUpper("Write <br/>"));
+      document.write(lowerUpper("PHp <br/>"));
+    </script>
+  </body>
+</html>

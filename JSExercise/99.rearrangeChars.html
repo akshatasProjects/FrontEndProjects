@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rearrange characters</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to check whether it is possible to rearrange
+      the characters of a given string. This is in such a way that it will
+      become equal to another given string.
+    </p>
+    <script>
+      function rearrangeStr(str1, str2) {
+        let firstSet = str1.split("");
+        let secondSet = str2.split("");
+        let result = true;
+
+        firstSet.sort();
+        secondSet.sort();
+
+        for (let i = 0; i < Math.max(firstSet.length, secondSet.length); i++) {
+          if (firstSet[i] !== secondSet[i]) {
+            result = false;
+          }
+        }
+        return result;
+      }
+
+      document.write(rearrangeStr("xyz", "zyp"));
+    </script>
+  </body>
+</html>

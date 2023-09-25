@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shortest possible string</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to find the shortest possible string.<br />
+      This can be converted into a string and converted into a palindrome by
+      adding characters to the end of it.
+    </p>
+    <script>
+      function strPalindrome(str) {
+        let flag;
+        for (let i = str.length; ; i++) {
+          flag = true;
+          for (let j = 0; j < i - j - 1; j++) {
+            if (
+              i - j - 1 < new_str.length &&
+              new_str[j] != new_str[i - j - 1]
+            ) {
+              flag = false;
+              break;
+            }
+          }
+        }
+      }
+
+      document.write(strPalindrome("abcddc"));
+    </script>
+  </body>
+</html>
