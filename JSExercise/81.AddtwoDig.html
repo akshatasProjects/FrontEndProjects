@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add two digits of a given positive integer of length two</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to add two digits to a given positive integer
+      of length two.
+    </p>
+
+    <script>
+      function addDig(num) {
+        document.write(`The Entered number is ${num}<br/>`);
+        document.write(`First Digit ${num % 10}<br/>`);
+        document.write(`Second Digit is ${Math.floor(num / 10)}<br/>`);
+        document.write(
+          `Sum of two Digit is ${(num % 10) + Math.floor(num / 10)}`
+        );
+        return (num % 10) + Math.floor(n / 10);
+      }
+      document.write(addDig(25));
+    </script>
+  </body>
+</html>

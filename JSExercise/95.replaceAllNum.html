@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Replace All numbers</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to replace all numbers with a specified number
+      in an array of integers.
+    </p>
+    <script>
+      function replaceNum(arr, old, newValue) {
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i] === old) {
+            arr[i] = newValue;
+          }
+        }
+        return arr;
+      }
+      let arr = [1, 2, 3, 2, 2, 8, 1, 9];
+
+      document.write(replaceNum(arr, 2, 5));
+    </script>
+  </body>
+</html>

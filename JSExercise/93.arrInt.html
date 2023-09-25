@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find the maximum difference</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to find the maximum difference among all
+      possible pairs of a given array of integers.
+    </p>
+    <script>
+      function arrMaxDiff(arr) {
+        let maxResult = 0;
+        for (let i = 0; i < arr.length; i++) {
+          for (let k = 0; k != i && k < arr.length; k++) {
+            let diff = Math.abs(arr[i] - arr[k]);
+            maxResult = Math.max(maxResult, diff);
+          }
+        }
+        return maxResult;
+      }
+
+      document.write(arrMaxDiff([1, 2, 3, 8, 9]));
+    </script>
+  </body>
+</html>

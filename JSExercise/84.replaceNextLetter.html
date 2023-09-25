@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Replace each character</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to replace each character in a given string
+      with the next in the English alphabet. <br />Note: ‘a’ will be replace by
+      ‘b’ or ‘z’ would be replaced by ‘a’.
+    </p>
+
+    <script>
+      function replaceAlpha(str) {
+        let allChar = str.split("");
+
+        for (var i = 0; i < all_chars.length; i++) {
+          var n = all_chars[i].charCodeAt() - "a".charCodeAt();
+
+          n = (n + 1) % 26;
+
+          all_chars[i] = String.fromCharCode(n + "a".charCodeAt());
+        }
+        return allChar.join("");
+      }
+
+      document.write(replaceAlpha("Akshata"));
+    </script>
+  </body>
+</html>

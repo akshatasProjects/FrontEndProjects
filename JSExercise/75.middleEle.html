@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Middle Element</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to create an array taking the middle elements
+      of the two arrays of integer and each length 3.
+    </p>
+
+    <script>
+      function middleEle(arr1, arr2) {
+        if (arr1.length == 3 && arr2.length == 3) {
+          let newArr = [];
+          newArr.push(arr1[1], arr2[1]);
+
+          return newArr;
+        } else {
+          return false;
+        }
+      }
+
+      document.write(middleEle([1, 2, 3], [1, 5, 6]));
+    </script>
+  </body>
+</html>

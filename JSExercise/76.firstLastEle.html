@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array of Integers</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to create an array by taking the first and last
+      elements from a given array of integers. The length must be larger than or
+      equal to 1
+    </p>
+    <script>
+      function firstLastArr(arr) {
+        let newArr = [];
+        if (arr.length >= 1) {
+          newArr.push(arr[0], arr[arr.length - 1]);
+          return newArr;
+        } else {
+          return false;
+        }
+      }
+      document.write(firstLastArr([10, 30, 50, 40]));
+    </script>
+  </body>
+</html>

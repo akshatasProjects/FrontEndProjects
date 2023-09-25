@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sum of absolute differences</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to compute the sum of the absolute differences
+      of consecutive numbers in a given array of integers.
+    </p>
+    <script>
+      function absDiff(arr) {
+        let result = 0;
+        for (let i = 1; i < arr.length; i++) {
+          result = result + Math.abs(arr[i] - arr[i - 1]);
+          document.write(result + "<br/>");
+        }
+        return result;
+      }
+      document.write(absDiff([1, 2, 3, 2, -5]));
+    </script>
+  </body>
+</html>

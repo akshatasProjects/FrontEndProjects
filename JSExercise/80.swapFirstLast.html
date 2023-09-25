@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swap First Last</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to swap the first and last elements of a given
+      array of integers. The array length should be at least 1.
+    </p>
+    <script>
+      function swapFirstLast(arra) {
+        [arra[0], arra[arra.length - 1]] = [arra[arra.length - 1], arra[0]];
+        return arra;
+      }
+
+      document.write(swapFirstLast([10, 30]));
+    </script>
+  </body>
+</html>

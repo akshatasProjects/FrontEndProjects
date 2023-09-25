@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Types of Given Angle</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to find the types of a given angle.
+      <br />Types of angles:<br />
+      Acute angle: An angle between 0 and 90 degrees. <br />Right angle: An 90
+      degree angle. <br />Obtuse angle: An angle between 90 and 180 degrees.
+      <br />Straight angle: A 180 degree angle.
+    </p>
+    <script>
+      function typeAngle(Anglenum) {
+        if (Anglenum < 90) {
+          return "Acute Angle";
+        }
+
+        if (Anglenum === 90) {
+          return "Right Angle";
+        }
+        if (Anglenum > 90 && Anglenum < 180) {
+          return "Obtuse Angle";
+        }
+        return "Straight line";
+      }
+
+      document.write(typeAngle(67));
+    </script>
+  </body>
+</html>

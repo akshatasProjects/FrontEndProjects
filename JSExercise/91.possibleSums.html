@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Possible sum of some of its k consecutive numbers</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to find the maximum possible sum of some of its
+      k consecutive numbers (numbers that follow each other in order) in a given
+      array of positive integers.
+    </p>
+
+    <script>
+      function sumOfK(nums, k) {
+        let result = 0;
+        let tmpSum = 0;
+        for (let i = 0; i < k - 1; i++) {
+          tmpSum = tmpSum + nums[i];
+          document.write(tmpSum + "=" + "<br/>");
+        }
+
+        for (let i = k - 1; i < nums.length; i++) {
+          tmpSum = tmpSum + nums[i];
+
+          if (tmpSum > result) {
+            result = tmpSum;
+          }
+          tmpSum = tmpSum - nums[i - k + 1];
+          document.write(tmpSum + "<br/>");
+        }
+        return result;
+      }
+
+      document.write(sumOfK([1, 2, 3, 14, 5], 2));
+    </script>
+  </body>
+</html>

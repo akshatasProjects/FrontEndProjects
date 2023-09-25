@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>maximum difference</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to find the maximum difference between any two
+      adjacent elements of a given array of integers.
+    </p>
+    <script>
+      function maxDiff(arr) {
+        let max = -1;
+        let temp;
+        for (i = 0; i < arr.length - 1; i++) {
+          temp = Math.abs(arr[i] - arr[i + 1]);
+          max = Math.max(max, temp);
+        }
+        return max;
+      }
+
+      document.write(maxDiff([1, 2, 3, 8, 9]));
+    </script>
+  </body>
+</html>

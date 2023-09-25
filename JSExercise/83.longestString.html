@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find the longest string from a given array of strings</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to find the longest string from a given array
+      of strings.
+    </p>
+    <script>
+      function longestString(str_ara) {
+        var max = str_ara[0].length;
+
+        str_ara.map((curValue) => (max = Math.max(max, curValue.length)));
+
+        result = str_ara.filter((curValue) => curValue.length == max);
+        return result;
+      }
+
+      document.write(longestString(["a", "aa", "aaa"]));
+    </script>
+  </body>
+</html>
