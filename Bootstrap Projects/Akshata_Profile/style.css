@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;500&family=Playfair+Display:wght@400;600&display=swap");
+
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+  background: linear-gradient(
+    to bottom right,
+
+    #fff3e2,
+    #ffe5ca,
+    #f0997d,
+    #781d42
+  );
+}
+
+.bg-profile {
+  background-color: white;
+}
+
+.bg-btn {
+  background-color: #f0997d;
+  border: none;
+}
+
+.personalInfo {
+  width: 80px;
+  height: 80px;
+}
+
+.CV-downld {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-watsap {
+  text-decoration: none;
+  color: black;
+}
+
+.btn-watsap:hover {
+  color: white;
+}
+
+.whatsapp {
+  width: 30px;
+  height: 30px;
+}
