@@ -1,0 +1,70 @@
+.main {
+  height: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 3%;
+  font-weight: bolder;
+}
+
+body {
+  background-color: lightgray;
+}
+
+span {
+  padding: 10px;
+  color: white;
+  background-color: lightblue;
+}
+
+.container {
+  background-color: white;
+}
+
+nav {
+  background-color: white;
+  color: black;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 1%;
+}
+
+h3 {
+  color: red;
+}
+
+.top {
+  height: 5px;
+  width: 72%;
+  background-color: red;
+  border: none;
+  padding: 0;
+}
+
+.pictures {
+  /* border-top: 2px red solid; */
+  width: 40px;
+  display: block;
+  margin-top: 8%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+p {
+  font-size: 24px;
+}
+
+.social {
+  width: 60px;
+}
