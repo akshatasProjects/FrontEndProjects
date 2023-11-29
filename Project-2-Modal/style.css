@@ -8,7 +8,7 @@ body {
     "Lucida Sans", Arial, sans-serif;
   padding: 0;
   margin: 0;
-  background-image: url("../IMAGES/bg-Image.jpg");
+  background-image: url("IMAGES/bg-Image.jpg");
   background-size: cover;
 }
 
