@@ -151,13 +151,52 @@ body{
     box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
 }
 
-
 .project-box{
     left:10%;
     border-radius: 5%;
 }
 
+.fa{
+    font-size: 32px;
+    padding-left: 15%;
 
-/* Media Query */
+}
 
+
+/*----------------------MEDIA Queries ------------------------------------*/
+@media only screen and (max-width: 800px) {
+    .profile-container{
+        width: 450px;
+    }
+
+    .profile-pic img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .project-container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        gap: 30px;
+        margin-right: -100px;
+    }
+
+    .personal-details h2{
+        top: 50%;
+        
+    }
+
+    .personal-details a{
+        position: absolute;
+        bottom: 10px;
+        font-size: 16px;
+        width: 10%; 
+        float: left;
+    }
+}
 
