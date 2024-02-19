@@ -1,0 +1,47 @@
+/* vertical Menu bar */
+.icon-bar{
+    width: 90px;
+    background-color: #555;
+}
+
+.icon-bar a{
+    display: block;
+    text-align: center;
+    color: white;
+    padding: 12px 0;
+    font-size: 38px;
+}
+
+.icon-bar a:hover{
+    background-color: #cdbcbc;
+}
+
+.active{
+    background-color: #cdbcbc;
+} 
+
+/* ----------------------icon-bar-Horizontal------------------------ */
+.icon-bar-hr{
+    width: 100%;
+    background-color: rgb(209, 227, 228);
+    overflow: auto;
+}
+
+.icon-bar-hr a{
+    float: left;
+    text-align: center;
+    font-size: 36px;
+    padding: 12px 0;
+    width: 20%;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.icon-bar-hr a:hover {
+    background-color: #000; /* Add a hover color */
+  }
+  
+  .icon-bar-hr .active {
+    background-color: #04AA6D; /* Add an active/current color */
+  }
+  
