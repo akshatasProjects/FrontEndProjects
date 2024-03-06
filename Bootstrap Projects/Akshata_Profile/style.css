@@ -140,7 +140,8 @@ h2{
 .link a{
     text-decoration: none;
     color: white;
-    background-color: #858585;
+    background: linear-gradient(to top, #ff00ff,#890089 );
+    /* background-color: #858585; */
     padding: 10px;
     border-radius: 5px;
 }
@@ -148,10 +149,11 @@ h2{
 
 
 /*----------------------MEDIA Queries ------------------------------------*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
    
     .profile-container{
         background-color: #E9E7EA;
+        
         width: 400px;
         max-width: 100%;
         margin: auto;
@@ -159,8 +161,9 @@ h2{
         box-shadow: 0px 10px 50px #858585;
         display: grid;
         grid-template-columns: 95%;
-        column-gap: 5%;
+        column-gap: 5%; 
         row-gap: 30px;
+        
         
     }
 
