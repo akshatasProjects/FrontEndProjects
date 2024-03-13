@@ -1,0 +1,164 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: lightblue;
+}
+
+header{
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  margin-top: 20px;
+  text-align: center;
+  
+}
+
+header a{
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+nav a{
+  padding: 10px;
+}
+
+.explore-btn{
+ /* border: 1px solid black; */
+ width: 110px;
+ padding: 10px;
+ border-radius: 50px;
+ background: linear-gradient(to right, rgb(45, 176, 186), lightgreen);
+ box-shadow: 4px 4px 3px 2px gray; 
+}
+
+
+.container{
+  /* box-sizing: border-box; */
+  width: 500px;
+  height: 350px;
+  background: #fff;
+  margin:10% auto;
+  padding:60px;
+  border: 6px dashed lightblue;
+  overflow: hidden;
+}
+
+form h2{
+  text-align: center;
+  background-color: #fff;
+  margin-bottom: 30px;
+  font-weight:400;
+}
+
+form, label, p{
+  margin: 10px;
+  margin-top: 20px;
+  background: #fff;
+  font-size: 14px;
+ 
+}
+
+form p{
+  color: gray;
+  font-weight: lighter;
+}
+
+form input{
+  background: #fff;
+  padding: 10px;
+  margin-top:15px;
+  margin-left: 10px;
+  width: 200px;
+  border: 1px solid lightblue;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.btnSearch{
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 160px;
+  width: 150px;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  background: linear-gradient(to bottom, lightblue, lightseagreen);
+}
+
+table{
+  border: 1px solid blue;
+  max-width: 70%;
+  width: 50%;
+  margin: 10% auto;
+  align-items: center;
+  
+
+}
+
+table h2{
+  font-size: 50px;
+  margin-right:100px ;
+}
+
+table img{
+  width: 100px;
+  height: 100px;
+  margin-left: 300px;
+}
+
+table p{
+  background: lightblue;
+  font-size: 16px;
+  margin-right: 200px;
+  width: 500px;
+
+}
+
+/* --------------- */
+
+.guide-container{
+  /* border: 1px solid red; */
+  display: inline-block;
+  text-align: center;
+  width: 70%;
+  margin-left: 20%;
+}
+
+.guide-container h2{
+  font-size: 40px;
+  margin: 50px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.img{
+  width: 150px;
+  float: left;
+}
+
+.img-right{
+  width: 150px;
+  float: right;
+}
+
+.content p{
+  width: 70%;
+  text-align: justify;
+  font-size: 16px;
+  background: lightblue;
+  margin-top: 5%;
+  line-height: 35px;
+}
+
+/* .content2 p{
+  background: lightblue;
+  text-align: justify;
+  font-size: 16px;
+  background: lightblue;
+  margin-top: 5%;
+  line-height: 35px;
+
+} */
+
+
