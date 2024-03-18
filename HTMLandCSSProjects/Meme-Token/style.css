@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: #13264A;
+  margin: 5px;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+#page {
+  display: grid;
+  grid-template-areas:
+    "head head head"
+    "main main main"
+    "main main main"
+    "foot foot foot ";
+  grid-template-rows: 50px 1fr 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 10px auto;
+  text-align: center;
+  height:100vh;
+  max-width: 1200px;
+}
+
+#page > header {
+  grid-area: head;
+  margin: 10px auto;
+  height: 500px;
+  width: 1000px;
+  border-radius: 20px;
+  background-color: #99e1f9;
+  margin-bottom: 30%;
+  /* border: 2px solid green; */
+}
+
+header> p{
+  margin: 13% auto;
+  font-size: 70px;
+  font-weight: 200;
+  color: #f674ef;
+  text-shadow: 5px 5px black;
+}
+
+header>p>span{
+  color: #fdd53c;
+}
+
+#page > main {
+  grid-area: main;
+  background-color: #13264A;
+  width: 1000px;
+  margin: 10px auto;
+  height: 200px;
+  color: white;
+  margin-top: 39%;
+  
+}
+
+.about{
+  /* float: left; */
+  display: inline-block;
+  width: 410px;
+  height: 65px;
+  padding: 30px;
+  font-size: 30px;
+  text-align: left;
+  color: #f674ef;
+  text-shadow: 5px 5px black;
+  /* border: 2px solid blue; */
+
+}
+
+.about p{
+  font-size: 20px;
+  text-align: left;
+  color: #fdd53c;
+  text-shadow: 3px 3px black;
+  width: 500px;
+}
+
+.description{
+   display: inline-block;
+   width: 500px;
+   margin: 10px;
+}
+
+
+.description button{
+  width: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.description p{
+  text-align: justify;
+}
+
+#btn-1{
+  background-color: #fdd53c;
+  box-shadow: 8px 8px 5px black;
+}
+
+#btn-2{
+  background-color:#99e1f9;
+  box-shadow: 8px 8px 5px black;
+}
+
+#btn-3{
+  background-color:#f674ef;
+  box-shadow: 8px 8px 5px black;
+}
+
+.charts{
+  width: 100%;
+  height: 42vh;
+  background-color: #fdd53c;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+}
+
+.chart1{
+
+  background-color: #8cffa0;
+  width: 100%;
+  height: 300px;
+  display:flex;
+  flex-direction: row;
+  border-radius: 50px;
+ 
+  
+}
+.chart2{
+  position: relative;
+  background-color:#f674ef;
+  background: url(images/d8bd2691-344f-41cd-b2c0-c281015d95c0.jpg);
+  background-size: cover;
+  width: 290px;
+  height: 200px;
+  display: flex;
+  float: right;
+  margin-bottom: 20%;
+  border-radius: 30px;
+  
+}
+
+.chart3{
+  background-color: #7988a5;
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+}
+
+
+#page > footer {
+  grid-area: foot;
+  background-color:#99e1f9;
+  /* height: 100px; */
+  width: 100%;
+  text-align: center;
+  
+  margin-top: 30%;
+  padding: 20px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  
+}
+
+
+@media only screen and (max-width: 450px) {
+  #page {
+    display: grid;
+    grid-template-areas:
+      "head"
+      "main"
+      "main"
+      "foot";
+    grid-template-rows:  1fr ;
+    grid-template-columns: 1fr;
+    margin: 10px auto;
+    text-align: center;
+    height:100vh;
+    max-width: 450px;
+  }
+
+}
