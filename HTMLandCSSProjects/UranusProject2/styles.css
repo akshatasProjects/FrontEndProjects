@@ -65,6 +65,11 @@ p {
  
 }
 
+#about{
+  padding: 10%;
+}
+
+
 /* Sections */
 
 .colored-section {
@@ -225,8 +230,8 @@ p {
 }
 
 
-/* -----------------MQ----------------- */
-@media (max-width: 1028px) {
+/* -----------------MQ----------------- 1028*/
+@media (max-width: 994px) {
   #title {
     text-align: center;
   }
@@ -245,5 +250,9 @@ p {
     background-color: #102944;
     
   }
-}
 
+  #about{
+    margin-top: 10%;
+  }
+  
+}
