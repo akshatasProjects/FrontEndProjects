@@ -19,7 +19,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js" defer></script>
-    
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js' defer></script>
+    <script src='//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js' defer></script>
+
     <!-- css stylesheet -->
     <link rel="stylesheet" href="styles.css" />
    
@@ -33,37 +35,44 @@
       referrerpolicy="no-referrer"
     />
   </head>
-
   <body>
     <section class="colored-section" id="title">
       <div class="container-fluid">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
-          <a class="navbar-brand" href="">URANUS</a>
-
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo01"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#testimonials">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#pricing">View Chart</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#cta">Contact </a>
-              </li>
-            </ul>
+        
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">URANUS</a>
+            <button class="navbar-toggler" 
+                  type="button" 
+                  data-bs-toggle="offcanvas" 
+                  data-bs-target="#offcanvasNavbar" 
+                  aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">URANUS</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+      
+              <!-- Menu items on screen -->
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1">
+                  <li class="nav-item ">
+                    <a class="nav-link active" aria-current="page" href="#testimonials">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#pricing">Chart</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#footer">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </nav>
+        </nav>  
 
         <!-- Title -->
 
@@ -123,7 +132,6 @@
     <!-- Testimonials -->
     
     <section class="colored-section" id="testimonials">
-      
       <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active container-fluid">
@@ -143,7 +151,7 @@
             <h2 class="testimonial-text">
               Why Do People Buy Meme Coins?
             </h2>
-            <p>In its early days, Dogecoin was mainly used for ‘tipping’, which is the practise of rewarding people on the internet for doing a good deed. Some meme coins offer utility or are now part of wider decentralised finance (DeFi) ecosystems.</p>
+            <p>In its early days, Dogecoin was mainly used for tipping, which is the practise of rewarding people on the internet for doing a good deed. Some meme coins offer utility or are now part of wider decentralised finance (DeFi) ecosystems.</p>
           </div>
         </div>
         <button
@@ -181,14 +189,12 @@
 
     <section class="colored-section" id="cta">
       <div class="container-fluid">
-        <h3 class="big-heading">
+        <h3 class="big-heading2">
           Explore More About the Meme Tokens.
         </h3>
         <button
               type="button"
-              class="btn btn-outline-light btn-lg download-button"
-              
-            >
+              class="btn btn-outline-light btn-lg download-button">
             <a href="explore.html">
                Explore More about Planet <span><i class="fas fa-hand-holding-usd"></i> Uranus</span></a>
             </button>
@@ -204,7 +210,8 @@
         <i class="social-icon fab fa-twitter"></i>
         <i class="social-icon fab fa-instagram"></i>
         <i class="social-icon fas fa-envelope"></i>
-         <i class="social-icon fas fa-brands fa-whatsapp"></i>
+        <i class="social-icon fas fa-brands fa-whatsapp"></i>
+      
         <p>© Copyright $ Uranus</p>
       </div>
     </footer>
