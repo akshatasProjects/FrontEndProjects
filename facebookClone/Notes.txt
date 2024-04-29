@@ -1,0 +1,10 @@
+ OUTLINE: by using outline none will not highlight element on focus 
+          but when we use JUST border 0 / none it does highlight the border on focus.
+
+ FLEX-BASIS:
+  What is a flex basis?
+  Flex-basis is a CSS property used in flexboxes that sets the initial size of a flex item before it grows or shrinks. Flex items exist in flex containers,
+  which grow to fill empty space or shrink to prevent overflow on a web page.
+
+** Whenever we use position : sticky then we have to give TOP
+
