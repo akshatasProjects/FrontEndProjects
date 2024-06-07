@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkedIn Clone Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--------------------------- Navbar---------------------- -->
+    <nav class="navbar">
+      <div class="navbar-left">
+        <!-- linkedin Logo -->
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="logo image">
+        </a>
+        <div class="search-box">
+            <img src="images/search.png" alt="search image">
+            <input type="text" placeholder="Search">
+        </div>
+      </div>
+      <div class="navbar-center">
+        <!-- Menulist -->
+        <ul>
+          <li><a href="#" class="active"><img src="images/home.png" alt="Home image"><span>Home</span></a></li>
+          <li><a href="#"><img src="images/network.png" alt="Home image"><span>My Network</span></a></li>
+          <li><a href="#"><img src="images/jobs.png" alt="Home image"><span>Jobs</span></a></li>
+          <li><a href="#"><img src="images/message.png" alt="Home image"><span>Messaging</span></a></li>
+          <li><a href="#"><img src="images/notification.png" alt="Home image"><span>Notifications</span></a></li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <div class="online">
+           <!-- user image -->
+        <img src="images/profile-pic.jpg" alt="User image" class="nav-profile-img" onclick="toggleMenu()">
+        </div>
+      </div>
+      <!-------------------- Profile dropdown Menu ------------------->
+      <div class="profile-menu-wrap" id="profile-menu">
+        <div class="profile-menu">
+          <div class="user-info">
+            <img src="images/profile-pic.jpg" alt="">
+            <div>
+              <h3>Akshata</h3>
+              <a href="profile.html">See your profile</a>
+            </div>
+          </div>
+          <hr>
+          <a href="#" class="profile-menu-link">
+            <img src="images/feedback.png">
+            <p>Give Feedback</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/setting.png">
+            <p>Settings & Privacy</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/help.png">
+            <p>Help& Support</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/display.png">
+            <p>Display & Accessibility</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/logout.png">
+            <p>Logout</p>
+            <span>></span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+  <!------------------------CONTAINER------------------------------>
+   <div class="container">
+    <div class="profile-main">
+      <div class="profile-container">
+        <img src="images/cover-pic.png" width="100%" alt="">
+        <div class="profile-container-inner">
+          <img src="images/profile-pic.jpg" class="profile-pic" alt="">
+          <h1>Akshata</h1>
+          <b>Frontend Developer</b>
+          <p>United Arab Emirates &middot; <a href="#">Contact info</a></p>
+          <div class="mutual-connection">
+            <img src="images/user-2.png" alt="">
+            <span>1 mutual connection: Orlando Diggs</span>
+          </div>
+          <div class="profile-btn">
+            <a href="#" class="primary-btn"><img src="images/connect.png" alt="">Connect</a>
+            <a href="#"><img src="images/chat.png" alt="">Message</a>
+          </div>
+        </div>
+      </div>
+      <!-------------------------PROFILE DESCRIPTION-------------------------------->
+      <div class="profile-description">
+        <h2>About</h2>
+        <p>A hardworking and passionate job seeker with strong organizational skills. To seek and maintain a full-time position that 
+          offers professional challenges utilizing interpersonal skills, excellent time management and problem-solving skills, Detail oriented team player. Able to handle multi-tasking with a high degree of accuracy.
+        </p>
+        <a href="#" class="see-more-link">See more...</a>
+      </div>
+      <div class="profile-description">
+        <h2>Experience</h2>
+        <div class="profile-desc-row">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGdf5gr7aXXDi54ys87m_dK1RZftVkn4mubw&s" alt="">
+          <div>
+            <h3>Pricing & Reporting Analyst</h3>
+            <b>Hewlett Packard - Fulltime</b>
+            <b>Jan 2010 &middot; Nov 2014</b>
+            <p>Importing Raw data from various datasources, Analysing the client requirements from data sources.</p>
+            <br/>  
+            <ul>
+                <li>Preparing various process status reports, so that the team can close ‘In progress’ cases to
+                  ensure faster response to customers.</li>
+                <li>Preparing Daily/Weekly/Monthly Activity Report and other report of the process.</li>
+                <li>Responding to inquiries, advising on optimal solutions, contributing to competitive quotation
+                  and assisting at external sales events.</li>
+                <li>Fixing and managing the order fall-out cases by adding the correct products in the deal
+                  and removing the configuration error.</li>
+                <li>Managing Others Queries for amending the deal for Quantity change, adding/removing
+                  products, product price changes etc., as per customers’ requirements.</li>
+              </ul>
+            <hr>
+          </div>
+        </div>
+         <a href="#" class="experience-link">show all experiences <img src="images/right-arrow.png" alt=""></a>
+     </div>
+     <!--------EDUCATIONAL DESCRIPTION------------>
+     <div class="profile-description">
+       <h2>Education</h2>
+       <div class="profile-desc-row">
+        <img src="data:image/jpeg;base64,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" alt="">
+        <div>
+          <h3>Karnataka Science College</h3>
+          <b>BCA - Computer Application</b>
+          <b>2005 - 2008</b>
+          <hr>
+        </div>
+      </div>
+     </div>
+     <!--------------------------SKILLS------------------------------->
+     <div class="profile-description">
+      <h2>Skills</h2>
+      <a href="" class="skills-btn">HTML 5</a>
+      <a href="" class="skills-btn">CSS</a>
+      <a href="" class="skills-btn">Bootstrap</a>
+      <a href="" class="skills-btn">SASS</a>
+      <a href="" class="skills-btn">JavaScript</a>
+      <a href="" class="skills-btn">React</a>
+      <a href="" class="skills-btn">Wordpress</a>
+     </div>
+     <!-- Languages -->
+     <div class="profile-description">
+      <h2>Languages</h2>
+      <a href="" class="language-btn">English</a>
+      <a href="" class="language-btn">Hindi</a>
+      <a href="" class="language-btn">Kannada</a>
+     </div>
+    </div>
+    <!-- profile sidebar -->
+    <div class="profile-sidebar">
+      <div class="sidebar-ad">
+        <small>Ad &middot; &middot; &middot;</small>
+        <p>Master the 5 principles of web design</p>
+        <div>
+          <img src="images/user-1.png" alt="">
+          <img src="images/mi-logo.png" alt="">
+        </div>
+        <strong>Brand and Demand in Xiaomi</strong>
+        <a href="#" class="ad-link">Learn More</a>
+      </div>
+      <div class="sidebar-people">
+        <h3>People You may Know</h3>
+        <div class="sidebar-people-row">
+          <img src="images/user-3.png" alt="">
+          <div>
+            <h2>Samuel</h2>
+            <p>Head of Marketing at Alibaba</p>
+            <a href="#">Connect</a>
+          </div>
+        </div>
+        <div class="sidebar-people-row">
+          <img src="images/user-2.png" alt="">
+          <div>
+            <h2>Bejamin</h2>
+            <p>Head of Marketing at Alibaba</p>
+            <a href="#">Connect</a>
+          </div>
+        </div>
+        <div class="sidebar-people-row">
+          <img src="images/user-1.png" alt="">
+          <div>
+            <h2>David</h2>
+            <p>Head of Marketing at Alibaba</p>
+            <a href="#">Connect</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--PROFILE FOOTER-------------------------------------------->
+ <div class="profile-footer">
+  <div class="sidebar-useful-links">
+    <a href="#">About</a>
+    <a href="#">Accessibility</a>
+    <a href="#">Help Center</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Advertising</a>
+    <a href="#">Get the App</a>
+    <a href="#">More</a>
+
+    <!-- Copyright -->
+    <div class="copyright-msg">
+      <img src="images/logo.png" alt="copyright image">
+      <p>Linkedup &copy; 2024. All right reserved</p>
+    </div>
+  </div>
+ </div>
+
+
+
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
