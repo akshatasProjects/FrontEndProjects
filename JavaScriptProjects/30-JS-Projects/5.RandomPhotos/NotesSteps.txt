@@ -1,0 +1,21 @@
+--------------INDEX.HTML----------------
+* create a div with class name "image-container"
+* downlaod 3 images link from "lorem picsum" --> https://picsum.photos/
+* add those images in the container.
+* After container Add button with class "btn" and text "Load More"
+
+------------  STYLE.CSS-----------------
+* BODY -- margin:0, display flex, flex-direction column, align items center, change background color 
+* image-container -- text align center (to make all images center)
+* image-container img -- reduce the size of images margin 10px, border radius 5px, box-shadow hr vr blur color add background color, width 300 and height 300.
+* .btn -- change background color, border to none, padding 10 20, margin 20, color white. 
+
+--------------SCRIPT.JS-----------------
+
+create element
+function addNewImages() {
+  let num = Math.floor(Math.random() * 2000);
+  const newImgEl = document.createElement("img");
+  newImgEl.src = `https://picsum.photos/300?random=${num}`;
+  container.appendChild(newImgEl);
+}
