@@ -1,0 +1,38 @@
+body{
+  margin: 2%;
+  background: linear-gradient(slateblue,lightblue, lightblue);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+small{
+  text-align: center;
+  margin-left: 15%;
+}
+img{
+  width: 400px;
+  height: 300px;
+  margin: auto 35%;
+  border-radius: 5px;
+  box-shadow: 7px 4px 8px rgba(0,0,0,0.6);
+}
+
+#caption {
+  font-size: 17px;
+  font-family: Gill Sans;
+  color: black;
+}
+
+h2.title-APJ {
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  text-shadow: 5px 5px 10px black;
+}
+
+
+/* Styling the Title and giving shadow to the title */
+#title {
+  text-align: center;
+  text-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+
