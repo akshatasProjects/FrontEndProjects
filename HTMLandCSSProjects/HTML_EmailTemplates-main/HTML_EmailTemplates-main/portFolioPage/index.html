@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+
+      body {
+        font-family: "Lato", sans-serif;
+        background-color: #d8dbdb;
+        font-size: 18px;
+        /* max-width, margin, padding are base of template */
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 1%;
+        color: #565659;
+      }
+      .container {
+        background-color: #fafaff;
+        border-top: 10px solid #3db5a0;
+        border-radius: 5px;
+      }
+      img {
+        max-width: 100%;
+      }
+
+      .logo {
+        width: 100%;
+        padding: 1% 0;
+        text-align: center;
+      }
+
+      .logo img {
+        max-width: 250px;
+      }
+
+      .three-col {
+        margin: 10px 0 26px;
+        float: left;
+        width: 29.3%;
+        padding: 5% 2%;
+        text-align: center;
+      }
+
+      .three-col img {
+        border-radius: 50%;
+        max-width: 135px;
+        padding: 2%;
+      }
+
+      .btn {
+        background: #3db5a0;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 700;
+        padding: 10px 14px;
+        border-radius: 8px;
+        letter-spacing: 2px;
+      }
+
+      h2 {
+        letter-spacing: 1px;
+        padding-bottom: 15px;
+      }
+      p {
+        line-height: 28px;
+        padding-bottom: 25px;
+      }
+
+      .line {
+        clear: both;
+        height: 1px;
+        background-color: #fe6b58;
+        margin: 15px auto 10px;
+        width: 98%;
+      }
+      .two-col {
+        margin: 10px 0 26px;
+        float: left;
+        width: 46%;
+        padding: 5% 2%;
+      }
+      .social {
+        width: 96%;
+        text-align: center;
+        list-style-type: none;
+        padding: 2%;
+        margin: 20px 0 5px;
+      }
+
+      .social li {
+        display: inline;
+      }
+
+      .social img {
+        max-width: 40px;
+      }
+      .contact {
+        text-align: center;
+        padding-bottom: 6%;
+      }
+
+      @media (max-width: 600px) {
+        body {
+          padding: 1%;
+        }
+
+        .three-col,
+        .two-col {
+          min-width: 96%;
+          margin: 0 0 15px !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- wrapper or conatiner -->
+    <div class="container">
+      <!-- Logo Section -->
+      <div class="logo">
+        <img src="img/logo.png" alt="html Logo" />
+      </div>
+      <!-- banner section -->
+      <div class="banner">
+        <img src="img/banner.png" alt="banner image" />
+      </div>
+      <!-- Three Column Layout -->
+      <div class="three-col">
+        <h2>Email Dev</h2>
+        <img src="img/mouse.png" alt="mouse Image" />
+        <p>
+          There are many different email clients to consider when determining
+          the width of your design
+        </p>
+        <div class="btn-holder">
+          <a href="#" class="btn" target="_blank">HTML Email</a>
+        </div>
+      </div>
+      <div class="three-col">
+        <h2>Comp Dev</h2>
+        <img src="img/computer.png" alt="System Image" />
+        <p>
+          There are many different email clients to consider when determining
+          the width of your design
+        </p>
+        <div class="btn-holder">
+          <a href="#" class="btn" target="_blank">Learn More</a>
+        </div>
+      </div>
+      <div class="three-col">
+        <h2>Phone Dev</h2>
+        <img src="img/phone.png" alt="Phone Image" />
+        <p>
+          There are many different email clients to consider when determining
+          the width of your design
+        </p>
+        <div class="btn-holder">
+          <a href="#" class="btn" target="_blank">Learn More</a>
+        </div>
+      </div>
+      <!-- Hr Line -->
+      <div class="line"></div>
+
+      <!-- Two columns -->
+      <div class="two-col">
+        <img src="img/pie-chart.png" alt="pie-chart image" />
+      </div>
+      <div class="two-col">
+        <h2>Latest Email</h2>
+        <p>
+          There are many different email clients to consider when determining
+          the width of your design but one of the most commonly used is Gmail
+          for the web.
+        </p>
+        <div class="btn-holder">
+          <a href="#" class="btn" target="_blank">Email Course</a>
+        </div>
+      </div>
+      <!-- Hr Line -->
+      <div class="line"></div>
+      <!-- Social Media Icons -->
+      <ul class="social">
+        <li>
+          <a href="#" target="_blank"
+            ><img src="img/facebook.png" alt="facebook icon"
+          /></a>
+          <a href="#" target="_blank"
+            ><img src="img/instagram.png" alt="ista icon"
+          /></a>
+          <a href="#" target="_blank"
+            ><img src="img/linkedin.png" alt="Linkedin icon"
+          /></a>
+          <a href="#" target="_blank"
+            ><img src="img/twitter.png" alt="Twitter icon"
+          /></a>
+          <a href="#" target="_blank"
+            ><img src="img/youtube.png" alt="Youtube icon"
+          /></a>
+        </li>
+      </ul>
+      <!-- Footer -->
+      <p class="contact">
+        XYZ road<br />
+        1(800)(55-5555)<br />
+        Town Road - City - State 12345<br />
+        abc@xyz.com
+      </p>
+      <!--container  -->
+    </div>
+  </body>
+</html>

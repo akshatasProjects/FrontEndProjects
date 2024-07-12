@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Html Email Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700"
+      rel="stylesheet"
+    />
+    <style>
+      /* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Rochester&display=swap'); */
+      * {
+        margin: 0;
+        border: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: #f1f1f4;
+        font-family: "Quicksand", sans-serif;
+        font-size: 18px;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2%;
+        color: #565859;
+      }
+      #wrapper {
+        margin: 0 auto;
+        background: #fff;
+      }
+      h2 {
+        letter-spacing: 1%;
+        padding-left: 2%;
+        font-weight: 700;
+      }
+
+      p {
+        padding: 2%;
+        text-align: justify;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      .line {
+        clear: both;
+        margin: 4% auto;
+        width: 90%;
+        height: 2px;
+        background-color: #e3e9e9;
+      }
+      header {
+        /* background-color: #565859; */
+        width: 98%;
+      }
+      #logo {
+        border: 2px solid black;
+        width: 150px;
+        text-align: center;
+        /* ---from tut--- */
+        float: left;
+        margin: 2% 0 0 5%;
+        max-width: 220px;
+      }
+      #callout_social {
+        float: right;
+        margin: 3% 3% 2% 0;
+        height: auto;
+        overflow: hidden;
+      }
+      .social {
+        float: right;
+        list-style: none;
+        margin-top: 4%;
+        padding: 0;
+      }
+
+      .social li {
+        display: inline-block;
+      }
+      .banner {
+        margin-bottom: 3%;
+      }
+      .btn {
+        float: right;
+        border-radius: 8px;
+        color: #fff;
+        font-size: 17px;
+        background: #18a0d3;
+        padding: 8px;
+        text-decoration: none;
+      }
+      .btn-holder {
+        float: right;
+        margin: 0 2% 4% 0;
+      }
+
+      .btn:hover {
+        background: #4ec0eb;
+        text-decoration: none;
+      }
+      .contact {
+        text-align: center;
+        margin-bottom: 4%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 1:step create a space outline -->
+    <div id="wrapper">
+      <!-- 2: create header add section for logo and scoial media icons-->
+      <header>
+        <div id="logo">
+          <img src="images/matrix_logo.png" alt="" />
+        </div>
+
+        <div id="callout_social">
+          <ul class="social">
+            <li>
+              <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook-logo-2019.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="https://facebook.com" target="_blank">
+                <img src="images/google-plus.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="https://facebook.com" target="_blank">
+                <img src="images/twitter.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="https://facebook.com" target="_blank">
+                <img src="images/youtube.png" alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div class="banner">
+        <!-- <img src="images/banner.jpg" alt="" /> -->
+        <img
+          src="https://images.pexels.com/photos/4050387/pexels-photo-4050387.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt=""
+        />
+      </div>
+      <h2>Learn how to create cool emails this month!</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, aut
+        magnam illum rerum ratione, odio nemo itaque dicta et, aliquam sed
+        perspiciatis. Voluptas suscipit veniam autem recusandae dolores, illo
+        saepe.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, aut
+        magnam illum rerum ratione, odio nemo itaque dicta et, aliquam sed
+        perspiciatis. Voluptas suscipit veniam autem recusandae dolores, illo
+        saepe.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, aut
+        magnam illum rerum ratione, odio nemo itaque dicta et, aliquam sed
+        perspiciatis. Voluptas suscipit veniam autem recusandae dolores, illo
+        saepe.
+      </p>
+      <div class="btn-holder">
+        <a href="#" class="btn">Learn More</a>
+      </div>
+
+      <div class="line"></div>
+      <p class="contact">
+        Macintuts <br />
+        (555)-5555<br />
+        1 city Road - Town - State 10000<br />
+      </p>
+    </div>
+    <!--Container-->
+  </body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Two Column Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+
+    body {
+      font-family: "Lato", sans-serif;
+      background-color: #d8dbdb;
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 2%;
+      color: #252527;
+    }
+    .wrapper {
+      background: #f6faff;
+      box-shadow: 0 0 10px #666;
+    }
+    img {
+      max-width: 100%;
+    }
+
+    .social {
+      border: 2px solid #000;
+      width: 98%;
+      text-align: center;
+      list-style-type: none;
+      padding: 1%;
+      background-color: #666;
+    }
+
+    .social li {
+      display: inline;
+    }
+
+    .social img {
+      max-width: 45px;
+    }
+
+    .logo {
+      width: 100%;
+      margin: 1% 0;
+      text-align: center;
+    }
+
+    .logo img {
+      max-width: 200px;
+    }
+
+    h2 {
+      letter-spacing: 1%;
+      padding-bottom: 2%;
+    }
+    p {
+      text-align: justify;
+      line-height: 28px;
+    }
+
+    .btn-holder {
+      float: right;
+      margin: 4% 2%;
+    }
+
+    .btn {
+      float: right;
+      background: #252527;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 800;
+      padding: 10px 14px;
+      border-radius: 8px;
+      letter-spacing: 2px;
+    }
+
+    .line {
+      clear: both;
+      height: 1px;
+      background-color: #252527;
+      margin: 6% auto;
+      width: 98%;
+    }
+
+    .two-columns {
+      margin: 4% 0;
+      width: 46%;
+      float: left;
+      padding: 2%;
+    }
+    .contact {
+      text-align: center;
+      padding-bottom: 6;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1%;
+      }
+      .two-columns {
+        min-width: 96%;
+        margin: 0 !important;
+      }
+    }
+  </style>
+  <body>
+    <div class="wrapper">
+      <ul class="social">
+        <li>
+          <a href="#" target="_blank">
+            <img src="img/facebook-logo-24.png" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="img/twitter-logo-24.png" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="img/youtube-logo-24.png" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="img/instagram-logo-24.png" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="img/linkedin-logo-24.png" alt="" />
+          </a>
+        </li>
+      </ul>
+      <div class="logo">
+        <a href="#" target="_blank">
+          <img src="img/digitalocean-logo-240.png" alt="" />
+        </a>
+      </div>
+      <div class="banner">
+        <img src="img/banner.jpg" alt="" />
+      </div>
+      <div class="two-columns">
+        <h2>Latest Blog Post</h2>
+        <img src="img/team1.jpg" alt="" />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+          quasi. Odit quas autem quis perspiciatis ex a alias provident ea in,
+          quaerat eos corrupti? Mollitia eius tempore ab obcaecati fuga?
+        </p>
+        <div class="btn-holder">
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+      <div class="two-columns">
+        <h2>Latest Blog Post</h2>
+        <img src="img/team2.jpg" alt="" />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+          quasi. Odit quas autem quis perspiciatis ex a alias provident ea in,
+          quaerat eos corrupti? Mollitia eius tempore ab obcaecati fuga?
+        </p>
+        <div class="btn-holder">
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="logo">
+        <img src="img/digitalocean-logo-240.png" alt="" />
+      </div>
+      <div class="contact">
+        <address>
+          www.website.com<br />1(800)555-5555<br />
+          2 Town Road - City - State 9999<br />
+          hello@website.com<br />
+        </address>
+      </div>
+    </div>
+    <!--Wrapper ends here-->
+  </body>
+</html>
