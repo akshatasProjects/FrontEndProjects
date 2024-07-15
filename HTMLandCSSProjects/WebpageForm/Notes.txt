@@ -1,0 +1,15 @@
+Forms are always an essential part of any project and you will be working with a lot of forms in most of the applications so why not practice it earlier and test your knowledge. Once you get familiar with the input field or basic tags in HTML to create a form make a project using all those tags. How to use a text field, checkbox, radio button, date, and other important elements in a single form. You will be learning how to give a proper structure to a webpage while creating a form. Knowledge of HTML / HTML5 is good enough but you can use a bit of CSS to make the project look better. Take help from the links given below.
+
+We will use HTML to design the basic layout of the form, and CSS to enhance the design with elements such as text decoration, text color, background color, text alignment, margin, padding, and more.
+
+Approach
+* The <form> element is used to create an HTML form for user input.
+* Inside the form element, provide different options to the user like name, email, age, etc. 
+* In HTML, we have different input elements for different tasks. So, we are providing respective input 
+types according to the question (email for taking email input, text-area for taking a large message, 
+name for taking name input, etc.).
+* We have also used the radio-button (let a user selection of the provided choices.), 
+  check-button (let a user select zero or more options of the provided choices), 
+  and submit-button (the button for submitting the form data to a form-handler).
+
+
