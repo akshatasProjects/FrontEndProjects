@@ -1,0 +1,68 @@
+body{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  background-color: salmon;
+}
+
+h2{
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 5px;
+  color: white;
+  font-weight: 100;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  text-wrap: nowrap;
+}
+
+.container{
+  text-align: center;
+}
+
+.btn{
+  padding: 30px 50px;
+  background-color: white;
+  border: 0;
+  margin: 10px;
+  font-size: 30px;
+  min-width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  background-image: url('https://www.shutterstock.com/image-photo/drums-cymbals-concert-performance-selective-260nw-1048563875.jpg');
+  background-size: cover;
+  color: white;
+  font-family: cursive;
+  font-weight: 600;
+  text-shadow: 4px 4px 8px rgba(0,0,0,0.4);
+  cursor: pointer;
+  opacity: .8;
+  text-transform: capitalize;
+}
+
+.btn:hover{
+  color: black;
+}
+
+.btn:active{
+  background-size: 105%;
+}
+
+
+
+
+/* crash : 
+   https://www.shutterstock.com/image-photo/drums-cymbals-concert-performance-selective-260nw-1048563875.jpg
+
+   Snare
+   https://t4.ftcdn.net/jpg/03/10/12/25/360_F_310122501_xnz6svd5HjIlbtB1lKt7Lf6TG1rLeZmS.jpg
+
+   Kick
+   https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2BOC-bi9XUysdH-e3Iw9C5SVpDvnoTrNnYg&s
+
+   Tom
+   https://media.istockphoto.com/id/1438352617/photo/drum-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=94skCu0I1fWFDLyqCnLMuBlD2ayy9mQvT_Sd_ouSBdY=
+
+*/
