@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Map</title>
+  </head>
+  <body>
+    <h2>Image Maps</h2>
+    <p>Click on the sun or on one of the planets to watch it closer:</p>
+    <img
+      usemap="#planets"
+      src="https://science.nasa.gov/wp-content/uploads/2023/07/pia06890-our-solar-system-banner-1920x640-1.jpg?w=1920"
+      alt=""
+      style="width: 145px; height: 126px" />
+
+    <map name="planets">
+      <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm" />
+      <area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm" />
+      <area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm" />
+    </map>
+  </body>
+</html>
