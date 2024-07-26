@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas - line To</title>
+  </head>
+  <body>
+    <canvas
+      id="myCanvas"
+      width="200"
+      height="100"
+      style="border: 1px solid black"></canvas>
+    <script>
+      let c = document.getElementById("myCanvas");
+      let ctx = c.getContext("2d");
+      // x, y
+      ctx.moveTo(0, 0);
+      ctx.lineTo(200, 150);
+      ctx.stroke();
+    </script>
+  </body>
+</html>

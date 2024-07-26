@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas fillText</title>
+  </head>
+  <body>
+    <canvas
+      id="myCanvas"
+      height="200"
+      width="200"
+      style="border: 1px solid firebrick"
+      >Your browser doesnt support</canvas
+    >
+    <script>
+      let c = document.getElementById("myCanvas");
+      let ctx = c.getContext("2d");
+      ctx.font = "30px Arial";
+      ctx.fillText("Atharva", 50, 60);
+    </script>
+  </body>
+</html>
