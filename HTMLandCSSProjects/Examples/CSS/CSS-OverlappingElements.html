@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overlapping Elements</title>
+    <style>
+      img {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+      }
+      p {
+        color: white;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is a heading</h1>
+    <img
+      src="https://images.pexels.com/photos/325044/pexels-photo-325044.jpeg?auto=compress&cs=tinysrgb&w=600" />
+    <p>Overlapping Elements using z-index</p>
+    <p>
+      Because the image has a z-index of -1, it will be placed behind the text.
+    </p>
+  </body>
+</html>
