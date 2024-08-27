@@ -1,0 +1,189 @@
+Step 26
+A method in JavaScript is a function that's associated with certain values or objects. 
+An example you've already encountered is the .log() method, which is part of the console object.
+
+* Arrays have their own methods, and the first you will explore is the .push() method.
+* This allows you to "push" a value to the end of an array.
+
+* But what does .push() return?
+-- .push() returns the new length of the array, 
+after adding the value you give it.
+---------------------------------------------------------
+Step 27
+Another method essential for this project is the .pop() method. 
+It removes the last element from an array and returns that element.
+
+* When a method returns a value, you can think of it as giving the value back to you, 
+making it available for use in other parts of your code.
+
+* .pop() returns the value that was removed from the array.
+
+-- It is important to be aware of what values a method returns. Take some time to experiment with .push() and .pop()
+-----------------------------------------------------------
+*** Step 31
+Declaring a variable with the let keyword allows it to be reassigned. 
+This means you could change character later to be a completely different 
+value.
+
+a const variable cannot be reassigned like a let variable.
+A const variable also cannot be uninitialized. 
+
+------------------------------------------------------------
+Step 32
+You are now ready to start building your pyramid generator. 
+Your character variable will serve as the building block for the pyramid.
+
+------------------------------------------------------------
+Step 33
+To generate a pyramid, you will need to create multiple rows. 
+When you have to perform a task repeatedly until a condition is met, 
+you will use a loop. There are many ways to write a loop.
+
+------------------------------------------------------------
+Step 34
+Your loop now needs a proper iterator. The iterator is a variable you 
+can declare specifically in your for loop to control how the loop 
+iterates or goes through your logic.
+
+------------------------------------------------------------
+Step 35
+The condition of a for loop tells the loop how many times it should iterate. 
+When the condition becomes false, the loop will stop.
+
+-In JavaScript, a Boolean value can be either true or false. These are not strings
+
+------------------------------------------------------------
+Step 36
+Your iteration statement will tell your loop what to do with the iterator 
+after each run.
+
+When you reassign a variable, you can use the variable to reference the 
+previous value before the reassignment. This allows you to do things like 
+add three to an existing number. 
+For example, bees = bees + 3; would increase the value of bees by three.
+
+------------------------------------------------------------
+Step 38
+You should see the numbers zero through seven printed in your console, 
+one per line. 
+This will serve as the foundation for generating your pyramid.
+
+------------------------------------------------------------
+Step 41
+To manipulate the result string, you will use a different type of loop. 
+Specifically, a for...of loop, which iterates over 
+each item in an iterable object and temporarily assigns it to a variable.
+
+for (const value of iterable){}
+
+* Note that you can use const because the variable only exists for a single 
+  iteration, not during the entire loop
+
+------------------------------------------------------------
+Step 43
+Now all of your numbers are appearing on the same line using for.. of. 
+This will not work for creating a pyramid.
+
+You will need to add a new line to each row. 
+However, pressing the return key to insert a line break between quotes 
+in JavaScript will result in a parsing error. 
+Instead, you need to use the special escape sequence \n, 
+which is interpreted as a new line when the string is logged.
+
+ex: lineOne = lineOne + "\n" + lineTwo;
+
+result = result +"\n"+ row;
+
+------------------------------------------------------------
+Step 45
+Now you have a series of # characters, but the pyramid shape is still missing. 
+Fortunately, the i variable represents the current "row" number in your loop, 
+enabling you to use it for crafting a pyramid-like structure.
+
+* To achieve this, you will use the .repeat() method available to strings. 
+This method accepts a number as an argument, 
+specifying the number of times to repeat the target string. 
+
+ex: activity.repeat(3);
+rows.push(character.repeat(i+1))
+
+-----------------------------------------------------------
+Step 49
+All functions in JavaScript return a value, meaning 
+they provide the defined result of calling them for you to use elsewhere.
+
+-----------------------------------------------------------
+Step 51
+Your call variable has an undefined value, even though you defined it! 
+This is because your padRow function does not currently return a value. 
+By default, functions return undefined as their value.
+
+* In order to return something else, you need to use the return keyword.
+-----------------------------------------------------------
+Step 52
+When you have a value that is explicitly written in your code, like the 
+"Hello!" string in your function, it is considered to be hard-coded. 
+Hard-coding a value inside a function might not make it as reusable as 
+you'd like.
+
+* Instead, you can define parameters for the function. Parameters are 
+special variables that are given a value when you call the function, 
+and can be used in your function to dynamically change the result of the 
+function's code.
+
+-----------------------------------------------------------
+
+Step 53
+A function does not have to return a hard-coded value. 
+It can return the value stored in a variable. Parameters are 
+special variables for a function, so they can also be returned.
+
+-----------------------------------------------------------
+Step 57
+Variables in JavaScript are available in a specific scope. 
+In other words, where a variable is declared determines where in your 
+code it can be used.
+
+* The first scope is the global scope. 
+-- Variables that are declared outside of any "block" like a function or 
+for loop are in the global scope.
+
+-- When a variable is in the global scope, a function can access it in its 
+definition
+
+-- local scope or block scope:
+ A variable declared inside a function can only be used inside that function. 
+ If you try to access it outside of the function, you get a reference 
+ error.
+
+ -------------------------------------------------------------
+Step 59
+* Values returned out of a function are used by calling the function. 
+* You can use the function call directly as the value it returns, or 
+capture the returned value in a variable. 
+* This way, you can use the value assigned to a locally scoped variable, 
+outside the function it was created in.
+
+--------------------------------------------------------------
+Step 60
+An important thing to know about the return keyword is that it does not 
+just define a value to be returned from your function, it also stops the 
+execution of your code inside a function or a block statement. This means 
+any code after a return statement will not run.
+
+--------------------------------------------------------------
+Step 67
+
+* The values you provide to a function call are referred to as arguments, and 
+you pass arguments to a function call
+
+
+
+
+
+
+
+
+
+
+
