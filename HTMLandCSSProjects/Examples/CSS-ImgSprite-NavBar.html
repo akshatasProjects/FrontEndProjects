@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Image Sprite</title>
+    <style>
+      #navList {
+        border: 1px solid burlywood;
+        position: relative;
+      }
+
+      #navList li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 0;
+      }
+
+      #home {
+        left: 0;
+        width: 46px;
+        background: url("https://img.freepik.com/free-vector/hand-drawn-animation-frames-element-collection_23-2149845056.jpg?t=st=1724913724~exp=1724917324~hmac=91144a7ba98c04dd2d9d3e637dc4f8ad83f9dfbe6be94884a0c1be5143383954&w=996")
+            0,
+          0;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="navList">
+      <li id="home"><a href="#"></a></li>
+      <li id="prev"><a href="#"></a></li>
+      <li id="next"><a href="#"></a></li>
+    </ul>
+  </body>
+</html>
