@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-boxshadow-card</title>
+    <style>
+      .card {
+        /* border: 1px solid green; */
+        width: 250px;
+        text-align: center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 8px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: darkcyan;
+      }
+
+      .header {
+        /* border: 1px solid blue; */
+        padding: 10px;
+        font-size: 30px;
+        color: wheat;
+        text-shadow: 10px 8px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      .footer {
+        /* border: 1px solid brown; */
+        background-color: gray;
+        padding: 10px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Card using box shadow</h2>
+
+    <div class="card">
+      <div class="header">
+        <h1>card 1</h1>
+      </div>
+      <div class="footer">September 5, 2024</div>
+    </div>
+  </body>
+</html>
