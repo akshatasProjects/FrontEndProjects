@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Attribute</title>
+  </head>
+  <body>
+    <h2>What Can JavaScript Do?</h2>
+    <p>
+      In this case JavaScript changes the value of the src (source) attribute of
+      an image.
+    </p>
+    <button
+      onclick="document.getElementById('myImage').src='images/light-bulb_on.png'">
+      Bulb On
+    </button>
+
+    <img
+      id="myImage"
+      style="width: 100px"
+      src="https://cdn-icons-png.freepik.com/256/2342/2342782.png?ga=GA1.1.949340004.1724913688&semt=ais_hybrid"
+      alt="Bulb Image" />
+
+    <button
+      onclick="document.getElementById('myImage').src='https://cdn-icons-png.freepik.com/256/2342/2342782.png?ga=GA1.1.949340004.1724913688&semt=ais_hybrid'">
+      Bulb Off
+    </button>
+  </body>
+</html>
