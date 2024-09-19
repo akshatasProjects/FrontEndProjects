@@ -7,12 +7,13 @@
   </head>
   <body>
     <p>Adding an array element using length and not using the push().</p>
+    <p id="demo1"></p>
     <button onclick="myFunction()">Add to list</button>
     <p id="demo"></p>
 
     <script>
       const fruits = ["Banana", "Apple", "Orange", "Mango"];
-
+      document.getElementById("demo1").innerHTML = fruits;
       function myFunction() {
         fruits[fruits.length] = "Kiwi";
         document.getElementById("demo").innerHTML = fruits;
