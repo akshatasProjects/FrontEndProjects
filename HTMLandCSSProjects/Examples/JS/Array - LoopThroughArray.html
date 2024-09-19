@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loop Through an array</title>
+  </head>
+  <body>
+    <h2>Looping an Array</h2>
+    <p id="demo"></p>
+
+    <script>
+      const fruits = ["Banana", "Apple", "Orange", "Mango"];
+      let len = fruits.length;
+
+      let text = "<ul>";
+      for (let i = 0; i < len; i++) {
+        text += "<li>" + fruits[i] + "</li>";
+      }
+      text += "</ul>";
+      document.getElementById("demo").innerHTML = text;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adding an Element</title>
+  </head>
+  <body>
+    <p>Adding an array element using length and not using the push().</p>
+    <button onclick="myFunction()">Add to list</button>
+    <p id="demo"></p>
+
+    <script>
+      const fruits = ["Banana", "Apple", "Orange", "Mango"];
+
+      function myFunction() {
+        fruits[fruits.length] = "Kiwi";
+        document.getElementById("demo").innerHTML = fruits;
+      }
+    </script>
+  </body>
+</html>
