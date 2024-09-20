@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minimum Function</title>
+  </head>
+  <body>
+    <p>The highest number is <span id="demo"></span>.</p>
+    <p id="demo2"></p>
+    <script>
+      const arr = [40, 100, 1, 5, 25, 10];
+      document.getElementById("demo").innerHTML = myArrayMin(arr);
+
+      function myArrayMin(arrItem) {
+        let len = arrItem.length;
+        let minValue = Infinity;
+
+        while (len--) {
+          if (arrItem[len] < minValue) {
+            minValue = arrItem[len];
+          }
+        }
+        return minValue;
+      }
+    </script>
+  </body>
+</html>
