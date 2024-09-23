@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Filter</title>
+  </head>
+  <body>
+    <h2>Array Filter</h2>
+    <p id="demo"></p>
+    <script>
+      const age = [15, 45, 3, 19, 32];
+      const filterAge = age.filter(myFunction);
+
+      document.getElementById("demo").innerHTML = filterAge;
+
+      function myFunction(value, index, arr) {
+        return value > 18;
+      }
+    </script>
+  </body>
+</html>

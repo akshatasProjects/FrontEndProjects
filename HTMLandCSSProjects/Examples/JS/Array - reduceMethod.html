@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reduce Method</title>
+  </head>
+  <body>
+    <h2>Reduce Method</h2>
+    <p>Find the sum of all numbers in Array</p>
+    <p id="demo"></p>
+
+    <script>
+      const arrNum = [45, 4, 9, 16, 25];
+      const sum = arrNum.reduce(myFunction);
+      document.getElementById("demo").innerHTML = sum;
+
+      function myFunction(total, value, index, arr) {
+        return `${total} <br/>,${value}<br/> ,${index}<br/>,${arr}<br/>`;
+      }
+    </script>
+  </body>
+</html>
