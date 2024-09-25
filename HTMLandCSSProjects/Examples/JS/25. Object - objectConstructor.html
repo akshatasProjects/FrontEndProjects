@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Creating object using object constructor</p>
+    <p id="demo"></p>
+
+    <script>
+      // constructor function
+      function PersonData(first, last, age, eye) {
+        this.firstName = first;
+        this.lastName = last;
+        this.eyeColor = eye;
+        this.age = age;
+      }
+
+      const newFriend = new PersonData("John", "Doe", 45, "brown");
+      document.getElementById("demo").innerHTML =
+        "My friend name is " +
+        newFriend.firstName +
+        " he is " +
+        newFriend.age +
+        " years old";
+    </script>
+  </body>
+</html>
