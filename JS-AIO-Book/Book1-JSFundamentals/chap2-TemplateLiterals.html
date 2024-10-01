@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LISTING 3-1: Using a template literal string</title>
+  </head>
+  <body>
+    <p>LISTING 3-1: Using a template literal string</p>
+    <p id="demo"></p>
+    <script>
+      let orderTotal = 39.99;
+      let itemPurchased = "JavaScript All-in-One For Dummies";
+      let customer = "Joe Q. Developer";
+
+      let thankYou = `${customer}, thank you for your order of ${itemPurchased}. Your
+payment of ${orderTotal} was successful.`;
+
+      document.getElementById("demo").innerHTML = thankYou;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Functions</title>
+  </head>
+  <body>
+    <p>String Functions</p>
+    <p id="demo"></p>
+
+    <script>
+      let randomLetters = "pdfsdj";
+      randomLetters.charAt(4);
+
+      let phoneNumber = "313-555-1234";
+      phoneNumber.substring(12, 4);
+
+      let phoneNumber2 = "313-555-1234";
+      phoneNumber.slice(12, 4);
+
+      document.getElementById("demo").innerHTML =
+        randomLetters + " " + phoneNumber2.slice(12, 4);
+    </script>
+  </body>
+</html>
