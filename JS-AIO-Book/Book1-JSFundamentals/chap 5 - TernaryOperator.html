@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ternery Operator</title>
+  </head>
+  <body>
+    <p>
+      Assuming that the timeOfDay variable uses the 24-hour clock, the preceding
+      example returns 'Good morning!' before noon and a generic greeting
+      otherwise.
+    </p>
+    <p id="demo"></p>
+
+    <script>
+      const dt = new Date();
+      const hrs = dt.getHours();
+      let msg;
+      msg = hrs < 12 ? "Good Morning" : "Welcome";
+
+      document.getElementById("demo").innerHTML = msg;
+    </script>
+  </body>
+</html>
