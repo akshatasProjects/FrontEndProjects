@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>continue and break</title>
+  </head>
+  <body>
+    <p id="root"></p>
+
+    <script>
+      let phoneNumber = 555 - 222 - 444;
+      for (let digit of phoneNumber) {
+        if (digit === "-") continue;
+        console.log(digit);
+      }
+      document.getElementById("root").innerHTML = digit;
+    </script>
+  </body>
+</html>

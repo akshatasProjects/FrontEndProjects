@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Number - While Loop</title>
+  </head>
+  <body>
+    <p>Random Number Generation using while loop</p>
+    <div id="root"></div>
+
+    <script>
+      let guessNumberCounter = 0;
+      let numberToGuess = 71;
+      let guessedNum;
+
+      // while (guessedNum != numberToGuess) {
+      //   guessedNum = Math.floor(Math.random() * 100);
+      //   guessNumberCounter++;
+      // }
+
+      do {
+        guessedNum = Math.floor(Math.random() * 100);
+        guessNumberCounter++;
+      } while (guessedNum != numberToGuess);
+      document.getElementById("root").innerHTML = `
+        <h2>I guessed it!</h2>
+        <p>It only took me ${guessNumberCounter} guesses!</p>
+      
+      `;
+    </script>
+  </body>
+</html>
