@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+:root{
+  --blueColor: #88BAC8;
+  --darkBlue : #4d869b;
+  --TealColor : #336063;
+  --purpleColor: #333A57;
+  --magentaColor: #422C47;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'SUSE', Arial, Helvetica, sans-serif;
+  background: linear-gradient(#88BAC8,#4d869b,  #336063,  #333A57,  #422C47);
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  color: white;
+  height: 90vh;
+  padding: 60px;
+  /* border: 4px solid white; */
+}
+
+
+.banner{
+  border: 2px solid gray;
+  border-radius: 15px;
+  width: 40%;
+  text-align: justify;
+  border: 2px solid darkcyan;
+  
+}
+
+.banner h1{
+  padding: 20px;
+  border-bottom: 2px solid gray;
+}
+
+.banner h2{
+  padding: 20px;
+}
+.banner p{
+  line-height: 25px;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.banner .skills{
+  /* border: 1px solid white; */
+  color: white;
+  
+}
+
+.skills{
+  list-style: none;
+  text-align: center;
+  columns: 2;
+}
+
+.skills img{
+  width: 35px;
+  margin-top: 25px;
+}
+
+.skills li{
+  /* border: 1px solid yellow; */
+  display: inline-block;
+  width: 40%;
+  height: 40px;
+}
+
+.skills li a{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+/* -----------Profile Pic--------- */
+.profile-pic{
+  /* border: 2px solid brown; */
+  width: 40%;
+  text-align: center;
+}
+
+.img img{
+  background: linear-gradient(40deg,#88BAC8,#4d869b, #336063);
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.links{
+  /* border: 1px solid white; */
+  list-style: none;
+  display: flex;
+  width: 200px;
+}
+
+.links li a{
+  float: left;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+
+
+
+/* ------------------Navbar----------------- */
+.menuBar ul{
+   list-style: none;
+   display: flex;
+   background-color:  #4d869b;;
+   padding: 20px;
+   
+}
+
+.menuBar ul li a{
+  text-decoration: none;
+  color: white;
+  padding: 10px ;
+  font-size: 24px;
+}
+
+.menuBar ul .logo{
+  margin-right: 80px;
+  border: 6px double white;
+  font-size: 26px;
+  text-shadow: 8px 8px 5px rgba(0,0,0,0.3);
+}
+
+
+.menuBar a:not(.active):hover {
+  color: #336063;
+  /* padding: 20px; */
+}
+
+
+/* flex */
+.container::after{
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+
+/* ---------------------Media Queries------------------ */
