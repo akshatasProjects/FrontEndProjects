@@ -114,6 +114,10 @@ h5 {
   justify-content: center;
 }
 
+.w3-input {
+  background-color: #222b13;
+}
+
 /*------------------------------------------------- Filter Style-------------------- */
 /* *{
   margin: 0;
