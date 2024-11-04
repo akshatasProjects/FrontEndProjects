@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Akshata's Portfolio</title>
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="style2.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Raleway" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ </head>
+  <body style="max-width: 1300px" class="--light-green-2 w3-content">
+    <!-- Sidebar/menu -->
+    <nav
+      class="w3-sidebar w3-bar-block w3-animate-left w3-text-white w3-collapse w3-top w3-center --darker-green-3"
+      id="mySidebar">
+      <br />
+      <h3 class="w3-padding-64 w3-center">
+        <b>Akshata<br />Jog</b> <br />
+      </h3>
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button w3-padding w3-hide-large">
+        <!-- close icon -->
+        <img  onclick="w3_close()" src="images/close-button.png" alt="close button icon" class="closeBtn" />
+      </a>
+      </a>
+         
+      <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button"
+        >HOME</a
+      >
+      
+      
+      <!-------------------------------- social media Icons---------------------------- -->
+      <div class="w3-padding-32 w3-xlarge">
+        <!-- Add a link to email and contact# -->
+        <a href="mailto:akshata.desai09@gmail.com" class="w3-margin-12 w3-button"><i class="fa fa-envelope"> </i></a>
+        <a href="https://wa.me/971502164909" class="w3-margin-12 w3-button"><i class="fa fa-whatsapp"></i></a>
+        <a href="https://github.com/akshatasProjects?tab=overview&from=2024-06-01&to=2024-06-07" class="w3-margin-12 w3-button"><i class="fa fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/akshata-desai-672117242/" class="w3-margin-12 w3-button"> <i class="fa fa-linkedin"></i></a>
+      </div>
+   </nav>
+   
+    <!------------ Media query------------- -->
+    <!-- Top menu on small screens -->
+    <header
+      class="w3-container w3-top w3-hide-large w3-xlarge w3-padding-16">
+      <span class="w3-left w3-padding">Akshata Jog</span>
+      <a
+        href="javascript:void(0)"
+        class="w3-right w3-button "
+        onclick="w3_open()"
+        >☰</a>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div
+      class="w3-overlay w3-hide-large w3-animate-opacity"
+      onclick="w3_close()"
+      title="close side menu"
+      id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" id="w3-main">
+      <!-- Push down content on small screens -->
+      <div class="w3-hide-large" id="w3-hide-large"></div>
+
+      <!------------------Project Photo grid --------------------->
+      <div class="w3-row --darker-green-1" id="portfolio-projects">
+        <h4 class="w3-center w3-padding-large"><b>Projects</b></h4>
+        <div id="buttons">
+          <button class="btn" onclick="filterObjects('all')">
+            Show All Projects
+          </button>
+          <button class="btn" onclick="filterObjects('html')">
+            HTML & CSS Projects
+          </button>
+          <button class="btn" onclick="filterObjects('Bootstrap')">
+            Bootstrap Projects
+          </button>
+          <button class="btn" onclick="filterObjects('JS')">
+            Javascript Projects
+          </button>
+          <button class="btn" onclick="filterObjects('React')">
+            React Projects
+          </button>
+        </div>
+    
+        <!--------------------------- HTML and CSS Projects----------------------------------------- -->
+        <div class="w3-third">
+          <!------1-------->
+          <!-----------------------Tin Dog App---------------------------------->
+          <div class="box Bootstrap">
+            <img
+             src="images/Project-Images/Thumbnails/HTML And CSS/BS-Tindog_thumbnail_1600x900.png"
+             style="width: 100%"
+             alt="Dating App for Dog" />
+             <p class="abtProject">
+              <strong>About Project:</strong> <br/>This is a responsive website built using Bootstrap classes. 
+            </p>
+            <a class="view" href="https://akshatasprojects.github.io/FrontEndProjects/Bootstrap%20Projects/TinDog/
+            "><strong>View Project</strong></a>
+          </div>
+          <!------2-------->
+          <!----------------------Netflix Logo----------------------->
+          <div class="box html">
+            <img
+            src="images/Project-Images/Thumbnails/HTML And CSS/html&CSS-NetflixLogo_thumbnail_1600x900.png"
+            style="width: 100%"
+            alt="Netflix Logo using HTML and CSS" />
+            <p class="abtProject">
+              <strong>About Project:</strong> <br/>This is a Netflix logo using only HTML & CSS, Animation. 
+            </p>
+            <a class="view" href="https://akshatasprojects.github.io/FrontEndProjects/HTMLandCSSProjects/NetflixLogo/
+            "><strong>View Project</strong></a>
+          </div>
+          <!------3-------->
+          <!---------------------Email Template Portfolio----------------------------------->
+         <div class="box html">
+          <img
+          src="images/Project-Images/Thumbnails/Email Template/portfolio-Email Template_thumbnail_1600x900.png"
+          style="width: 100%"
+           alt="An Email Template using HTML and CSS" />
+           <p class="abtProject">
+            <strong>About Project:</strong> <br/>This is a Email Template which is responsive used HTML & CSS for the same. 
+          </p>
+          <a class="view" href="https://akshatasprojects.github.io/FrontEndProjects/HTMLandCSSProjects/HTML_EmailTemplates-main/HTML_EmailTemplates-main/portFolioPage/
+          "><strong>View Project</strong></a> 
+         </div>
+         <!------4-------->
+          <!---------------------Email Template Portfolio----------------------------------->
+          <div class="box html">
+            <img
+            src="images/Project-Images/Thumbnails/Email Template/Two-col-emailTemplate_thumbnail_1600x900.png"
+            style="width: 100%"
+             alt="An Email Template using HTML and CSS" />
+             <p class="abtProject">
+              <strong>About Project:</strong> <br/>This is a blog post Email Template which is responsive used HTML & CSS for the same. 
+            </p>
+            <a class="view" href="https://akshatasprojects.github.io/FrontEndProjects/HTMLandCSSProjects/HTML_EmailTemplates-main/HTML_EmailTemplates-main/1Blog2Col/"><strong>View Project</strong></a> 
+           </div>
+           <!-- JS -->
+           <div class="box JS">
+            <img
+            src="images/Project-Images/Thumbnails/JS/JS-AnimatedSearchBar_thumbnail_1600x900.png"
+            style="width: 100%"
+            alt="Animated search bar" />
+            <p class="abtProject">
+              <strong>About Project:</strong> <br/> This is an animated search bar, which will expand the search bar on mouse click on the icon. 
+            </p>
+            <a  class="view"href="https://akshatasprojects.github.io/FrontEndProjects/JavaScriptProjects/30-JS-Projects/13.AnimatedSearchBar/
+            "><strong>View Project</strong></a>
+          </div>
+          <!-- JS -->
+           <div class="box JS">
+            <img
+            src="images/Project-Images/Thumbnails/JS/JS-LoanCalculator_thumbnail_1600x900.png"
+            style="width: 100%"
+            alt="Loan Calculator" />
+            <p class="abtProject">
+              <strong>About Project:</strong> <br/>This is a JS project which calculates the loan amount based on the number of months and interest rate. 
+            </p>
+            <a  class="view" href="https://akshatasprojects.github.io/FrontEndProjects/JavaScriptProjects/30-JS-Projects/14.LoanCalculator/ "><strong>View Project</strong></a>
+          </div>
+
+          <!-- JS -->
+           <div class="box JS">
+            <img
+            src="images/Project-Images/Thumbnails/JS/JS-NewYearCountDown_thumbnail_1600x900.png"
+            style="width: 100%"
+            alt="New Year Countdown" />
+            <p class="abtProject">
+              <strong>About Project:</strong> <br/>This is a new year countdown app, which displays the number of days, hours, minutes and seconds pending for the new year. 
+            </p>
+            <a  class="view" href="https://akshatasprojects.github.io/FrontEndProjects/JavaScriptProjects/30-JS-Projects/15.newYearCountdown/
+            "><strong>View Project</strong></a>
+          </div>
+          <!-- JS -->
+           <div class="box JS">
+            <img
+            src="images/Project-Images/Thumbnails/JS/JS-AgeCalculator_thumbnail_1600x900.png"
+            style="width: 100%"
+            alt="Age calculator" />
+            <p class="abtProject">
+              <strong>About Project:</strong> <br/>This is a age calculator app, calculates the age based on the birthdate selected from the calendar. 
+            </p>
+            <a  class="view" href="https://akshatasprojects.github.io/FrontEndProjects/JavaScriptProjects/30-JS-Projects/17.AgeCalculator/
+            "><strong>View Project</strong></a>
+          </div>
+          <!-- JS -->
+           <div class="box JS">
+            <img
+            src="images/Project-Images/Thumbnails/JS/JS-ProfileStatics_thumbnail_1600x900.png"
+            style="width: 100%"
+            alt="Profile Statics" />
+            <p class="abtProject">
+              <strong>About Project:</strong> <br/>This is a project displays the number of experience, website and apps made on page load. 
+            </p>
+            <a  class="view" href="https://akshatasprojects.github.io/FrontEndProjects/JavaScriptProjects/30-JS-Projects/18.ProfileStatics/
+            "><strong>View Project</strong></a>
+          </div>
+        </div>
+       
+        <!-- Column 2nd JavaScript Projects -->
+        <div class="w3-third">
+          <!------1-------->
+          <!--------------------- Bankist App------------>
+          <div class="box JS">
+            <img
+            src="images/Project-Images/Thumbnails/JS/JS-BankistApp_thumbnail_1600x900.png"
+            style="width: 100%"
+            alt="A banking App which takes dummy data from a JSON file" />
+            <p class="abtProject">
+              <strong>About Project:</strong> <br/>This is a Javascript project of Bank transaction app it doesnt connect to Database but make use of dummy Javascript Object file for the user account details. username is: js password:1111 
+            </p>
+            <a  class="view"href="https://akshatasprojects.github.io/FrontEndProjects/JavaScriptProjects/BankistApp/"><strong>View Project</strong></a>
+          </div>
+          <!------2-------->
+          <!--------------------Calculator App-------------------------->
+          <div class="box JS">
+            <img
+            src="images/Project-Images/Thumbnails/JS/JS-Calculator_thumbnail_1600x900.png"
+            style="width: 100%"
+            alt="A calculator App" />
+            <p class="abtProject">
+              <strong>About Project:</strong> <br/>This is calculator project is done using HTML tables and CSS for design part and functionality using Javascript. 
+            </p>
+            <a class="view" href="https://akshatasprojects.github.io/FrontEndProjects/JavaScriptProjects/Project%20-%20Calculator/"><strong>View Project</strong></a>
+          </div>
+          <!------3-------->
+          <!------------------------Facebook Clone---------------------------------->
+         <div class="box JS">
+          <img
+          src="images/Project-Images/Thumbnails/JS/JS-FB-clone_thumbnail_1600x900.png"
+          style="width: 100%"
+          alt="A Social media Clone project" />
+          <p class="abtProject">
+              <strong>About Project:</strong> <br/>This is a responsive social media clone project made using Javascript which includes feature like toggle between dark and light mode.
+            </p>
+            <a class="view" href="https://akshatasprojects.github.io/FrontEndProjects/JavaScriptProjects/JS-CloneProjects/facebookClone/
+            "><strong>View Project</strong></a>
+          </div>
+          <!------4-------->
+          <!------------------------Double Landing Page---------------------------------->
+         <div class="box JS">
+          <img
+          src="images/Project-Images/Thumbnails/JS/JS-LandingPage_thumbnail_1600x900.png"
+          style="width: 100%"
+          alt="Double landing page" />
+          <p class="abtProject">
+              <strong>About Project:</strong> <br/>This is a double landing page developed using Javascript, where the screen will move from left to right and right to left on mouse-enter.
+            </p>
+            <a class="view"  href="https://akshatasprojects.github.io/FrontEndProjects/JavaScriptProjects/30-JS-Projects/10.DoubleLandingPage/"><strong>View Project</strong></a>
+          </div>
+           <!------5-------->
+          <!---------------------Email Template Portfolio----------------------------------->
+          <div class="box html">
+            <img
+            src="images/Project-Images/Thumbnails/Email Template/SinglePage-EmailTemplate_thumbnail_1600x900.png"
+            style="width: 100%"
+             alt="An Email Template using HTML and CSS" />
+             <p class="abtProject">
+              <strong>About Project:</strong> <br/>This is a single page blog post Email Template which is responsive used HTML & CSS for the same. 
+            </p>
+            <a class="view" href="https://akshatasprojects.github.io/FrontEndProjects/HTMLandCSSProjects/HTML_EmailTemplates-main/HTML_EmailTemplates-main/1singlePage/
+            "><strong>View Project</strong></a> 
+           </div>
+
+             <!-- JS -->
+             <div class="box JS">
+              <img
+              src="images/Project-Images/Thumbnails/JS/JS-VideoTrailer_thumbnail_1600x900.png"
+              style="width: 100%"
+              alt="Video Trailer" />
+              <p class="abtProject">
+                <strong>About Project:</strong> <br/>This is project shows the video trailer on click of a button. 
+              </p>
+              <a  class="view" href="https://akshatasprojects.github.io/FrontEndProjects/JavaScriptProjects/30-JS-Projects/19.VideoTrailer/ "><strong>View Project</strong></a>
+            </div>
+           <!------5-------->
+          <!---------------------Email Template Portfolio----------------------------------->
+          <div class="box html">
+            <img
+            src="images/Project-Images/Thumbnails/Email Template/NewsLetter-Email Template_thumbnail_1600x900.png"
+            style="width: 100%"
+             alt="An Email Template using HTML and CSS" />
+             <p class="abtProject">
+              <strong>About Project:</strong> <br/>This is a single pagenews letter Email Template which is responsive used HTML & CSS for the same. 
+            </p>
+            <a class="view" href="https://akshatasprojects.github.io/FrontEndProjects/HTMLandCSSProjects/HTML_EmailTemplates-main/HTML_EmailTemplates-main/1singlePage/
+            "><strong>View Project</strong></a> 
+           </div>
+
+          <div class="box html">
+            <img
+            src="images/Project-Images/Thumbnails/HTML And CSS/html&CSS-BlogPage_thumbnail_1600x900.png"
+            style="width: 100%"
+             alt="A newsltter page" />
+             <p class="abtProject">
+              <strong>About Project:</strong> <br/>This is a dummy newsletter page developed using HTMl & CSS. 
+            </p>
+            <a class="view" href="https://akshatasprojects.github.io/FrontEndProjects/LandingPage/"><strong>View Project</strong></a> 
+           </div>
+           
+        </div>
+
+        <div class="w3-third">
+          <!------1-------->
+          <div class="box JS">
+            <img
+            src="images/Project-Images/Thumbnails/JS/JS-HeartEmoji_thumbnail_1600x900.png"
+            style="width: 100%"
+            alt="Generates a Emojis on mouse move" />
+            <p class="abtProject">
+              <strong>About Project:</strong> <br/>This is a Javascript project based on mouse move event is used to generate the emoji for different size used Math.random(). 
+            </p>
+            <a class="view" href="https://akshatasprojects.github.io/FrontEndProjects/HTMLandCSSProjects/HTML_EmailTemplates-main/HTML_EmailTemplates-main/portFolioPage/
+            "><strong>View Project</strong></a> 
+          </div>
+          <!------2-------->
+         <div class="box JS">
+          <img
+          src="images/Project-Images/Thumbnails/JS/JS-LinkedIn-clone_thumbnail_1600x900.png"
+          style="width: 100%"
+          alt="A linkedIn clone Project" />
+          <p class="abtProject">
+            <strong>About Project:</strong> <br/>This is a cloned project of LunkedIn made using JavaScript, which can be switched between main profile and other activities. 
+          </p>
+          <a class="view" href="https://akshatasprojects.github.io/FrontEndProjects/JavaScriptProjects/JS-CloneProjects/linkedInClone/"
+          ><strong>View Project</strong></a> 
+         </div>
+         <!------3-------->
+         <div class="box JS">
+          <img
+          src="images/Project-Images/Thumbnails/JS/JS-WeatherApp_thumbnail_1600x900.png"
+          style="width: 100%"
+          alt="A Weather App" />
+          <p class="abtProject">
+            <strong>About Project:</strong> <br/>This is a Javascript project of checking the weather, its developed using open weather api, based on the city typed in the search bar the weather will be shown. 
+          </p>
+          <a class="view" href="https://akshatasprojects.github.io/FrontEndProjects/JavaScriptProjects/Project%20-%20WeatherAPP/ "
+          ><strong>View Project</strong></a> 
+         </div>
+         <!------4-------->
+         <!-- random color generator -->
+         <div class="box JS">
+          <img
+          src="images/Project-Images/Thumbnails/JS/JS-RandomColorGen_thumbnail_1600x900.png"
+          style="width: 100%"
+          alt="A Weather App" />
+          <p class="abtProject">
+            <strong>About Project:</strong> <br/>This is a Javascript project which generates 30 different random color code on each refresh of the page. 
+          </p>
+          <a class="view" href="https://akshatasprojects.github.io/FrontEndProjects/JavaScriptProjects/30-JS-Projects/11.RandomColorGen/ "
+          ><strong>View Project</strong></a> 
+         </div>
+         <!-- 5 -->
+         <div class="box html">
+          <img
+          src="images/Project-Images/Thumbnails/HTML And CSS/html&CSS-travelSite_thumbnail_1600x900.png"
+          style="width: 100%"
+           alt="A landing page for travel website" />
+           <p class="abtProject">
+            <strong>About Project:</strong> <br/>This is a landing page for the travel website. 
+          </p>
+          <a class="view" href="https://akshatasprojects.github.io/FrontEndProjects/HTMLandCSSProjects/TravelSite/"><strong>View Project</strong></a> 
+         </div> 
+         <!-- 6 -->
+         <div class="box html">
+          <img
+          src="images/Project-Images/Thumbnails/HTML And CSS/html&CSS-LandingPage_thumbnail_1600x900.png"
+          style="width: 100%"
+           alt="A banner section for food website" />
+           <p class="abtProject">
+            <strong>About Project:</strong> <br/>This is a hero section of the food website. 
+          </p>
+          <a class="view" href="https://akshatasprojects.github.io/FrontEndProjects/HTMLandCSSProjects/foodMenu/"><strong>View Project</strong></a> 
+         </div> 
+         <!-- 7 -->
+         <div class="box html">
+          <img
+          src="images/Project-Images/Thumbnails/HTML And CSS/html&CSS-SurveyForm_thumbnail_1600x900.png"
+          style="width: 100%"
+           alt="A Survey form Page" />
+           <p class="abtProject">
+            <strong>About Project:</strong> <br/>This is a survey form page developed using HTML and CSS. 
+          </p>
+          <a class="view" href="https://akshatasprojects.github.io/FrontEndProjects/HTMLandCSSProjects/WebpageForm/
+          "><strong>View Project</strong></a> 
+         </div> 
+         <!-- JS -->
+         <div class="box JS">
+          <img
+          src="images/Project-Images/Thumbnails/JS/JS-DrumKit_thumbnail_1600x900.png"
+          style="width: 100%"
+          alt="Drum Kit" />
+          <p class="abtProject">
+            <strong>About Project:</strong> <br/>This is a drum kit project which plays different sounds based on the key pressed. 
+          </p>
+          <a  class="view" href="https://akshatasprojects.github.io/FrontEndProjects/JavaScriptProjects/30-JS-Projects/20.DrumKit/
+          "><strong>View Project</strong></a>
+        </div>
+         <!-- JS -->
+         <div class="box JS">
+          <img
+          src="images/Project-Images/Thumbnails/JS/JS-TempConvertor_thumbnail_1600x900.png"
+          style="width: 100%"
+          alt="Drum Kit" />
+          <p class="abtProject">
+            <strong>About Project:</strong> <br/>This is a Temperature Convertor app which calculates the the Celsius, Fahrenheit and Kelvin based on the values entered. 
+          </p>
+          <a  class="view" href="https://akshatasprojects.github.io/FrontEndProjects/JavaScriptProjects/30-JS-Projects/22.%20TempratureConv/ "><strong>View Project</strong></a>
+        </div>
+        </div>
+      </div>
+
+      <!----------------------------------- footer ---------------------------------------------->
+      <div class="w3-center w3-padding-24 --light-green-2">
+        <div class="w3-xlarge">
+          <!-- Add a link to email and contact# -->
+          <a href="mailto:akshata.desai09@gmail.com" class="w3-margin-12 w3-button"><i class="fa fa-envelope"> </i></a>
+          <a href="https://wa.me/971502164909" class="w3-margin-12 w3-button"><i class="fa fa-whatsapp"></i></a>
+          <a href="https://github.com/akshatasProjects?tab=overview&from=2024-06-01&to=2024-06-07" class="w3-margin-12 w3-button"><i class="fa fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/akshata-desai-672117242/" class="w3-margin-12 w3-button"> <i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <!-- End page content -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

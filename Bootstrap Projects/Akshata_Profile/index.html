@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Akshata's Portfolio</title>
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="style2.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Raleway" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ </head>
+  <body style="max-width: 1300px" class="--light-green-2 w3-content">
+    <!-- Sidebar/menu -->
+    <nav
+      class="w3-sidebar w3-bar-block w3-animate-left w3-text-white w3-collapse w3-top w3-center --darker-green-3"
+      id="mySidebar">
+      <br />
+      <h3 class="w3-padding-64 w3-center">
+        <b>Akshata<br />Jog</b> <br />
+      </h3>
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button w3-padding w3-hide-large">
+        <!-- close icon -->
+        <img src="images/close-button.png" alt="close button icon" class="closeBtn" />
+      </a>
+      </a>
+      
+      <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button"
+        >ABOUT ME</a
+      >
+      <a href="#portfolio-projects" onclick="w3_close()" class="w3-bar-item w3-button"
+        >PORTFOLIO</a>
+
+      <a href="#certifications" onclick="w3_close()" class="w3-bar-item w3-button"
+        >CERTIFICATIONS</a>
+      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button"
+        >CONTACT</a
+      >
+
+      <!-------------------------------- social media Icons---------------------------- -->
+      <div class="w3-padding-32 w3-xlarge">
+        <!-- Add a link to email and contact# -->
+        <a href="mailto:akshata.desai09@gmail.com" class="w3-margin-12 w3-button"><i class="fa fa-envelope"> </i></a>
+        <a href="https://wa.me/971502164909" class="w3-margin-12 w3-button"><i class="fa fa-whatsapp"></i></a>
+        <a href="https://github.com/akshatasProjects?tab=overview&from=2024-06-01&to=2024-06-07" class="w3-margin-12 w3-button"><i class="fa fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/akshata-desai-672117242/" class="w3-margin-12 w3-button"> <i class="fa fa-linkedin"></i></a>
+      </div>
+   </nav>
+   
+    <!------------ Media query------------- -->
+    <!-- Top menu on small screens -->
+    <header
+      class="w3-container w3-top w3-hide-large w3-xlarge w3-padding-16">
+      <span class="w3-left w3-padding">Akshata Jog</span>
+      <a
+        href="javascript:void(0)"
+        class="w3-right w3-button "
+        onclick="w3_open()"
+        >☰</a>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div
+      class="w3-overlay w3-hide-large w3-animate-opacity"
+      onclick="w3_close()"
+      title="close side menu"
+      id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" id="w3-main">
+      <!-- Push down content on small screens -->
+      <div class="w3-hide-large" id="w3-hide-large"></div>
+
+      <!----------------------- About Me section Right ------------------------------->
+      <div
+        class="w3-container w3-center  w3-padding-16 --light-green-2"
+        id="about">
+        <h4><b>About Me</b></h4>
+        <img
+          src="images/profile-pic.png"
+          alt="Me"
+          class="w3-image w3-padding-16"
+          width="300"
+          height="650"
+          id="profile-pic"
+          />
+        <div class="w3-content w3-justify" style="max-width: 600px">
+          <h5> Hello,</h5><h2>My Name is Akshata</h2>
+          <p>
+            Back in 2022, I decided to try my hand in fullstack webdevelopment tumbled head first into the rabbit hole of coding and fullstack
+            development so enrolled myself into few online courses and also joined a live online class in "Crampete Learning Institute" chennai branch.
+          </p>
+          <p>
+            My main focus these days is understanding User Experience(UX),
+            so currently doing course provided by Google UX Design Professional Certificate in coursera.
+          </p>
+          <p>
+            When I am not at the computer, I am usually doing clay work or craft work, reading,
+            hanging out with my family.
+          </p>
+          <hr class="w3-opacity" />
+          <h4 class="w3-padding-16">Technical Skills</h4>
+          <p class="w3-wide">HTML</p>
+          <p class="w3-wide">CSS</p>
+          <p class="w3-wide">Bootstrap</p>
+          <p class="w3-wide">Javascript</p>
+          <p class="w3-wide">jQuery</p>
+          <p class="w3-wide">React</p>
+          <p class="w3-wide">Unit Testing</p>
+
+                 
+          <p>
+            <button
+              class="w3-button w3-padding-large w3-margin-top w3-margin-bottom --darker-green-1">
+             <a href="Akshata_Jog.pdf" class="w3-button">Download Resume</a>
+            </button>
+          </p>
+        </div>
+      </div>
+
+      <!------------------Project Photo grid --------------------->
+      <div class="w3-row --darker-green-1" id="portfolio-projects">
+        <h4 class="w3-center w3-padding-large"><b>My Recent Projects</b></h4>
+        <div class="w3-third">
+          
+            <img
+            src="images/Project-Images/Thumbnails/HTML And CSS/BS-Tindog_thumbnail_1600x900.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="Dating App for Dog" />
+                     
+          <img
+            src="images/Project-Images/Thumbnails/HTML And CSS/html&CSS-NetflixLogo_thumbnail_1600x900.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="Netflix Logo using HTML and CSS" />
+          <img
+            src="images/Project-Images/Thumbnails/Email Template/portfolio-Email Template_thumbnail_1600x900.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="An Email Template using HTML and CSS" />
+        </div>
+
+        <div class="w3-third">
+          <img
+            src="images/Project-Images/Thumbnails/JS/JS-BankistApp_thumbnail_1600x900.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="A banking App which takes dummy data from a JSON file" />
+          <img
+            src="images/Project-Images/Thumbnails/JS/JS-Calculator_thumbnail_1600x900.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="A calculator App" />
+          <img
+            src="images/Project-Images/Thumbnails/JS/JS-FB-clone_thumbnail_1600x900.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="A Social Media clone Project" />
+            <p class="w3-center">
+              <button
+                class="w3-button w3-padding-large w3-margin-top w3-margin-bottom --light-green-2">
+               <a href="allProjects.html" class=" w3-button">View All Projects</a>
+              </button>
+            </p>
+        </div>
+
+        <div class="w3-third ">
+          <img
+            src="images/Project-Images/Thumbnails/JS/JS-HeartEmoji_thumbnail_1600x900.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="Generates a Emojis on mouse move" />
+          <img
+            src="images/Project-Images/Thumbnails/JS/JS-LinkedIn-clone_thumbnail_1600x900.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="A linkedIn clone Project" />
+          <img
+            src="images/Project-Images/Thumbnails/JS/JS-WeatherApp_thumbnail_1600x900.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="A Weather App" />
+           
+        </div>
+       
+      </div>
+
+      
+
+     
+
+      <!-- Pagination -->
+      <!-- <div class="w3-center w3-padding-64 --darker-green-1">
+        <div class="w3-bar --light-green-2">
+          <a href="#" class="w3-bar-item w3-button --darker-green-1">«</a>
+          <a href="#" class="w3-bar-item --dark-green-2 --darker-green-1">1</a>
+          <a href="#" class="w3-bar-item w3-button --darker-green-1">2</a>
+          <a href="#" class="w3-bar-item w3-button --darker-green-1">»</a>
+        </div>
+      </div> -->
+
+      <!------------------Courses Section --------------------->
+      <div class="w3-row --darker-green-1" id="Certification">
+        <h4 class="w3-center w3-padding-large"><b>Certification Courses</b></h4>
+          <div class="w3-third w3-center w3-padding-32">
+          <img
+            src="images/certificates/crampete.png"
+            style="width: 250px"
+            onclick="onClick(this)"
+            alt="Fullstack webdevelopment Certification from Crampete" />
+         </div>
+
+        <div class="w3-third w3-center w3-padding-64">
+          <img
+            src="images/certificates/responsiveWebDesign.png"
+            style="width: 250px"
+            onclick="onClick(this)"
+            alt="Responsive Web design course Certification from Freecodecamp." />
+          
+        </div>
+        <div class="w3-third  w3-center w3-padding-64">
+          <img
+            src="images/certificates/Udemy-Bootcamp.png"
+            style="width: 250px"
+            onclick="onClick(this)"
+            alt="Web development bootcamp by Udemy" />
+          
+        </div>
+        <div class="w3-third  w3-center w3-padding-64">
+          <ul>
+            <li style="display: block;"><h5>Currently Doing Google's UX Designer Course on Coursera.</h5></li>
+          </ul>
+          
+        </div>
+      </div>
+
+      <!-- Modal for full size Project images on click-->
+      <div
+        id="modal01"
+        class="w3-modal w3-black"
+        onclick="this.style.display='none'">
+        <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+        <div
+          class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+          <img id="img01" class="w3-image" />
+          <p id="caption"></p>
+        </div>
+      </div>
+
+      <!----------------------- Contact section ------------------------------------>
+      <div
+        class="w3-container w3-padding-32 w3-padding-large --darker-green-1"
+        id="contact">
+        <div class="w3-content" id="w3-content">
+          <h4 class="w3-center"><b>Contact Me</b></h4>
+         
+          <form action="/action_page.php" target="_blank">
+            <div class="w3-section">
+              <label>Name</label>
+              <input
+                class="w3-input w3-border"
+                type="text"
+                name="Name"
+                required />
+            </div>
+            <div class="w3-section">
+              <label>Email</label>
+              <input
+                class="w3-input w3-border"
+                type="text"
+                name="Email"
+                required />
+            </div>
+            <div class="w3-section">
+              <label>Message</label>
+              <input
+                class="w3-input w3-border"
+                type="text"
+                name="Message"
+                required />
+            </div>
+            <button
+              type="submit"
+              class="w3-button w3-block w3-margin-bottom --light-green-2">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- footer -->
+
+      <div class="w3-center w3-padding-24 --light-green-2">
+         <!-------------------------------- social media Icons---------------------------- -->
+      <div class="w3-xlarge">
+        <!-- Add a link to email and contact# -->
+        <a href="mailto:akshata.desai09@gmail.com" class="w3-margin-12 w3-button"><i class="fa fa-envelope"> </i></a>
+        <a href="https://wa.me/971502164909" class="w3-margin-12 w3-button"><i class="fa fa-whatsapp"></i></a>
+        <a href="https://github.com/akshatasProjects?tab=overview&from=2024-06-01&to=2024-06-07" class="w3-margin-12 w3-button"><i class="fa fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/akshata-desai-672117242/" class="w3-margin-12 w3-button"> <i class="fa fa-linkedin"></i></a>
+      </div>
+      </div>
+
+      <!-- End page content -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
